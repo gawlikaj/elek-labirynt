@@ -4967,9 +4967,9 @@ LETTER landscape</description>
 <attribute name="NAME" x="59.4614" y="36.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="74.422" y="36.83" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X_2" gate="G$1" x="60.96" y="30.48" smashed="yes" grouprefs="MIDDLEBUTTONS"/>
-<instance part="P+2" gate="VCC" x="60.96" y="71.12" smashed="yes" grouprefs="MIDDLEBUTTONS">
-<attribute name="VALUE" x="58.42" y="68.58" size="1.778" layer="96" rot="R90"/>
+<instance part="X_2" gate="G$1" x="71.12" y="30.48" smashed="yes" grouprefs="MIDDLEBUTTONS"/>
+<instance part="P+2" gate="VCC" x="68.58" y="68.58" smashed="yes" grouprefs="MIDDLEBUTTONS">
+<attribute name="VALUE" x="66.04" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-63.5" y="-12.7" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="83.82" y="-12.7" smashed="yes">
@@ -5022,14 +5022,14 @@ LETTER landscape</description>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="60.96" y1="68.58" x2="60.96" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
+<wire x1="68.58" y1="66.04" x2="68.58" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
 <pinref part="B5" gate="1" pin="S"/>
-<wire x1="58.42" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
+<wire x1="58.42" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
 <wire x1="58.42" y1="58.42" x2="58.42" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
 <pinref part="B4" gate="1" pin="S"/>
 <wire x1="78.74" y1="58.42" x2="78.74" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
-<wire x1="60.96" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
-<junction x="60.96" y="63.5" grouprefs="MIDDLEBUTTONS"/>
+<wire x1="68.58" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
+<junction x="68.58" y="63.5" grouprefs="MIDDLEBUTTONS"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -5055,14 +5055,14 @@ LETTER landscape</description>
 </segment>
 <segment>
 <pinref part="X_2" gate="G$1" pin="0"/>
-<wire x1="60.96" y1="30.48" x2="60.96" y2="33.02" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="35.56" x2="60.96" y2="33.02" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
-<junction x="60.96" y="33.02" grouprefs="MIDDLEBUTTONS"/>
-<junction x="60.96" y="33.02" grouprefs="MIDDLEBUTTONS"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="35.56" x2="81.28" y2="33.02" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
-<wire x1="81.28" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
+<wire x1="81.28" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
+<wire x1="71.12" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91" grouprefs="MIDDLEBUTTONS"/>
+<wire x1="71.12" y1="30.48" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<junction x="71.12" y="33.02"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>

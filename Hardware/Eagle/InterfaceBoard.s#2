@@ -4818,28 +4818,6 @@ LETTER landscape</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<modules>
-<module name="LEFT_BUTTONS" prefix="" dx="30.48" dy="20.32">
-<ports>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
-</modules>
 <groups>
 <schematic_group name="LEFTBUTTONS"/>
 <schematic_group name="MIDDLEBUTTONS"/>
