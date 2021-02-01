@@ -4855,6 +4855,8 @@ LETTER landscape</description>
 <sheets>
 <sheet>
 <plain>
+<text x="86.36" y="15.24" size="1.778" layer="91">Designed by:  Andrew Gawlik
+Email:  gawlikaj@rose-hulman.edu</text>
 </plain>
 <instances>
 <instance part="B9" gate="1" x="-25.4" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
@@ -5148,6 +5150,10 @@ LETTER landscape</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
