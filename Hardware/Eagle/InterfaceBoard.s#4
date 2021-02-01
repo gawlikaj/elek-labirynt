@@ -4818,28 +4818,6 @@ LETTER landscape</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<modules>
-<module name="LEFT_BUTTONS" prefix="" dx="30.48" dy="20.32">
-<ports>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
-</modules>
 <groups>
 <schematic_group name="LEFTBUTTONS"/>
 <schematic_group name="MIDDLEBUTTONS"/>
@@ -4877,79 +4855,81 @@ LETTER landscape</description>
 <sheets>
 <sheet>
 <plain>
+<text x="86.36" y="15.24" size="1.778" layer="91">Designed by:  Andrew Gawlik
+Email:  gawlikaj@rose-hulman.edu</text>
 </plain>
 <instances>
-<instance part="B9" gate="1" x="109.22" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
+<instance part="B9" gate="1" x="-25.4" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="-31.75" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-29.21" y="56.515" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="B6" gate="1" x="15.24" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="8.89" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="11.43" y="56.515" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="B7" gate="1" x="30.48" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="24.13" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="26.67" y="56.515" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="B8" gate="1" x="-5.08" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="-21.59" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-8.89" y="56.515" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R8" gate="G$1" x="-2.54" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="-4.0386" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="0.762" y="36.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R7" gate="G$1" x="30.48" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="28.9814" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.782" y="36.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="15.24" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="13.7414" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="18.542" y="36.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R9" gate="G$1" x="-22.86" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
+<attribute name="NAME" x="-24.3586" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-19.558" y="36.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X_1" gate="G$1" x="7.62" y="30.48" smashed="yes" grouprefs="LEFTBUTTONS"/>
+<instance part="P+1" gate="VCC" x="7.62" y="71.12" smashed="yes" grouprefs="LEFTBUTTONS">
+<attribute name="VALUE" x="5.08" y="68.58" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="B2" gate="1" x="109.22" y="53.34" smashed="yes" grouprefs="RIGHTBUTTONS">
 <attribute name="NAME" x="102.87" y="50.8" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="105.41" y="56.515" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="B6" gate="1" x="149.86" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
-<attribute name="NAME" x="143.51" y="50.8" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="146.05" y="56.515" size="1.778" layer="96" rot="R90"/>
+<instance part="B3" gate="1" x="129.54" y="53.34" smashed="yes" grouprefs="RIGHTBUTTONS">
+<attribute name="NAME" x="123.19" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.73" y="56.515" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="B7" gate="1" x="165.1" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
+<instance part="B0" gate="1" x="165.1" y="53.34" smashed="yes" grouprefs="RIGHTBUTTONS">
 <attribute name="NAME" x="158.75" y="50.8" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="161.29" y="56.515" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="B8" gate="1" x="129.54" y="53.34" smashed="yes" grouprefs="LEFTBUTTONS">
-<attribute name="NAME" x="113.03" y="50.8" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="125.73" y="56.515" size="1.778" layer="96" rot="R90"/>
+<instance part="B1" gate="1" x="149.86" y="53.34" smashed="yes" grouprefs="RIGHTBUTTONS">
+<attribute name="NAME" x="133.35" y="50.8" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="146.05" y="56.515" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="132.08" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
-<attribute name="NAME" x="130.5814" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="135.382" y="36.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R7" gate="G$1" x="165.1" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
-<attribute name="NAME" x="163.6014" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="168.402" y="36.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$1" x="149.86" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
+<instance part="R1" gate="G$1" x="149.86" y="40.64" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
 <attribute name="NAME" x="148.3614" y="36.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="153.162" y="36.83" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="G$1" x="111.76" y="40.64" smashed="yes" rot="R90" grouprefs="LEFTBUTTONS">
+<instance part="R0" gate="G$1" x="165.1" y="40.64" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
+<attribute name="NAME" x="163.6014" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="168.402" y="36.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="132.08" y="40.64" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
+<attribute name="NAME" x="130.5814" y="36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="135.382" y="36.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="111.76" y="40.64" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
 <attribute name="NAME" x="110.2614" y="36.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="115.062" y="36.83" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X_1" gate="G$1" x="142.24" y="30.48" smashed="yes" grouprefs="LEFTBUTTONS"/>
-<instance part="P+1" gate="VCC" x="142.24" y="71.12" smashed="yes" grouprefs="LEFTBUTTONS">
+<instance part="X_3" gate="G$1" x="142.24" y="30.48" smashed="yes" grouprefs="RIGHTBUTTONS"/>
+<instance part="P+3" gate="VCC" x="142.24" y="71.12" smashed="yes" grouprefs="RIGHTBUTTONS">
 <attribute name="VALUE" x="139.7" y="68.58" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="B2" gate="1" x="109.22" y="111.76" smashed="yes" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="102.87" y="109.22" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="105.41" y="114.935" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="B3" gate="1" x="129.54" y="111.76" smashed="yes" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="123.19" y="109.22" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="125.73" y="114.935" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="B0" gate="1" x="165.1" y="111.76" smashed="yes" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="158.75" y="109.22" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="161.29" y="114.935" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="B1" gate="1" x="149.86" y="111.76" smashed="yes" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="133.35" y="109.22" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="146.05" y="114.935" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R1" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="148.3614" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="153.162" y="95.25" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R0" gate="G$1" x="165.1" y="99.06" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="163.6014" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="168.402" y="95.25" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R3" gate="G$1" x="132.08" y="99.06" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="130.5814" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="135.382" y="95.25" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R2" gate="G$1" x="111.76" y="99.06" smashed="yes" rot="R90" grouprefs="RIGHTBUTTONS">
-<attribute name="NAME" x="110.2614" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="115.062" y="95.25" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="X_3" gate="G$1" x="142.24" y="88.9" smashed="yes" grouprefs="RIGHTBUTTONS"/>
-<instance part="P+3" gate="VCC" x="142.24" y="129.54" smashed="yes" grouprefs="RIGHTBUTTONS">
-<attribute name="VALUE" x="139.7" y="127" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="B5" gate="1" x="58.42" y="53.34" smashed="yes" grouprefs="MIDDLEBUTTONS">
 <attribute name="NAME" x="52.07" y="50.8" size="1.778" layer="95" rot="R90"/>
@@ -4984,41 +4964,41 @@ LETTER landscape</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="142.24" y1="68.58" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="111.76" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="7.62" y1="68.58" x2="7.62" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="-22.86" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <pinref part="B7" gate="1" pin="S"/>
-<wire x1="132.08" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="165.1" y1="58.42" x2="165.1" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="-2.54" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="30.48" y1="58.42" x2="30.48" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <pinref part="B6" gate="1" pin="S"/>
-<wire x1="149.86" y1="58.42" x2="149.86" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="149.86" y1="63.5" x2="165.1" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="149.86" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<junction x="149.86" y="63.5" grouprefs="LEFTBUTTONS"/>
-<junction x="142.24" y="63.5" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="58.42" x2="15.24" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<junction x="15.24" y="63.5" grouprefs="LEFTBUTTONS"/>
+<junction x="7.62" y="63.5" grouprefs="LEFTBUTTONS"/>
 <pinref part="B9" gate="1" pin="S1"/>
-<wire x1="111.76" y1="58.42" x2="111.76" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="-22.86" y1="58.42" x2="-22.86" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <pinref part="B8" gate="1" pin="S1"/>
-<wire x1="132.08" y1="58.42" x2="132.08" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<junction x="132.08" y="63.5" grouprefs="LEFTBUTTONS"/>
+<wire x1="-2.54" y1="58.42" x2="-2.54" y2="63.5" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<junction x="-2.54" y="63.5" grouprefs="LEFTBUTTONS"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="142.24" y1="127" x2="142.24" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="111.76" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="142.24" y1="68.58" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="111.76" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
 <pinref part="B0" gate="1" pin="S"/>
-<wire x1="132.08" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="165.1" y1="116.84" x2="165.1" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="165.1" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<junction x="142.24" y="121.92" grouprefs="RIGHTBUTTONS"/>
+<wire x1="132.08" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="165.1" y1="58.42" x2="165.1" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="165.1" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<junction x="142.24" y="63.5" grouprefs="RIGHTBUTTONS"/>
 <pinref part="B1" gate="1" pin="S"/>
-<wire x1="149.86" y1="116.84" x2="149.86" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="149.86" y1="121.92" x2="165.1" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<junction x="165.1" y="121.92" grouprefs="RIGHTBUTTONS"/>
+<wire x1="149.86" y1="58.42" x2="149.86" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="149.86" y1="63.5" x2="165.1" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<junction x="165.1" y="63.5" grouprefs="RIGHTBUTTONS"/>
 <pinref part="B2" gate="1" pin="S1"/>
-<wire x1="111.76" y1="116.84" x2="111.76" y2="121.92" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="111.76" y1="58.42" x2="111.76" y2="63.5" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
 <pinref part="B3" gate="1" pin="S1"/>
-<wire x1="132.08" y1="116.84" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<junction x="132.08" y="121.92"/>
+<wire x1="132.08" y1="58.42" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<junction x="132.08" y="63.5"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -5036,22 +5016,22 @@ LETTER landscape</description>
 <segment>
 <pinref part="X_3" gate="G$1" pin="0"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="111.76" y1="91.44" x2="111.76" y2="93.98" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="132.08" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="111.76" y1="33.02" x2="111.76" y2="35.56" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="93.98" x2="132.08" y2="91.44" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<junction x="132.08" y="91.44" grouprefs="RIGHTBUTTONS"/>
-<junction x="132.08" y="91.44" grouprefs="RIGHTBUTTONS"/>
+<wire x1="132.08" y1="35.56" x2="132.08" y2="33.02" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<junction x="132.08" y="33.02" grouprefs="RIGHTBUTTONS"/>
+<junction x="132.08" y="33.02" grouprefs="RIGHTBUTTONS"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="93.98" x2="149.86" y2="91.44" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="149.86" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="149.86" y1="35.56" x2="149.86" y2="33.02" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="149.86" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
 <pinref part="R0" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="165.1" y1="91.44" x2="165.1" y2="93.98" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<wire x1="165.1" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<junction x="149.86" y="91.44" grouprefs="RIGHTBUTTONS"/>
-<wire x1="142.24" y1="88.9" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
-<junction x="142.24" y="91.44"/>
+<wire x1="142.24" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="165.1" y1="33.02" x2="165.1" y2="35.56" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<wire x1="165.1" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<junction x="149.86" y="33.02" grouprefs="RIGHTBUTTONS"/>
+<wire x1="142.24" y1="30.48" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
+<junction x="142.24" y="33.02"/>
 </segment>
 <segment>
 <pinref part="X_2" gate="G$1" pin="0"/>
@@ -5066,70 +5046,70 @@ LETTER landscape</description>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="33.02" x2="111.76" y2="35.56" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="-22.86" y1="33.02" x2="-22.86" y2="35.56" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="35.56" x2="132.08" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="111.76" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="-2.54" y1="35.56" x2="-2.54" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="-22.86" y1="33.02" x2="-2.54" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
-<wire x1="132.08" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="142.24" y1="33.02" x2="142.24" y2="30.48" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<junction x="132.08" y="33.02" grouprefs="LEFTBUTTONS"/>
+<wire x1="-2.54" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="7.62" y1="33.02" x2="7.62" y2="30.48" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<junction x="-2.54" y="33.02" grouprefs="LEFTBUTTONS"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="33.02" x2="165.1" y2="35.56" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="35.56" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="35.56" x2="149.86" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="149.86" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<wire x1="149.86" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<junction x="149.86" y="33.02" grouprefs="LEFTBUTTONS"/>
-<junction x="142.24" y="33.02" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<junction x="15.24" y="33.02" grouprefs="LEFTBUTTONS"/>
+<junction x="7.62" y="33.02" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON9" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="B9" gate="1" pin="P1"/>
-<wire x1="111.76" y1="45.72" x2="111.76" y2="48.26" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<label x="111.76" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
+<wire x1="-22.86" y1="45.72" x2="-22.86" y2="48.26" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<label x="-22.86" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON7" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="B7" gate="1" pin="P"/>
-<wire x1="165.1" y1="45.72" x2="165.1" y2="48.26" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<label x="165.1" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
+<wire x1="30.48" y1="45.72" x2="30.48" y2="48.26" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<label x="30.48" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="B2" gate="1" pin="P1"/>
-<wire x1="111.76" y1="104.14" x2="111.76" y2="106.68" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<label x="111.76" y="104.14" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
+<wire x1="111.76" y1="45.72" x2="111.76" y2="48.26" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<label x="111.76" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="B3" gate="1" pin="P1"/>
-<wire x1="132.08" y1="104.14" x2="132.08" y2="106.68" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<label x="132.08" y="104.14" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
+<wire x1="132.08" y1="45.72" x2="132.08" y2="48.26" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<label x="132.08" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON0" class="0">
 <segment>
 <pinref part="R0" gate="G$1" pin="2"/>
 <pinref part="B0" gate="1" pin="P"/>
-<wire x1="165.1" y1="104.14" x2="165.1" y2="106.68" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<label x="165.1" y="104.14" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
+<wire x1="165.1" y1="45.72" x2="165.1" y2="48.26" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<label x="165.1" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="B1" gate="1" pin="P"/>
-<wire x1="149.86" y1="104.14" x2="149.86" y2="106.68" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
-<label x="149.86" y="104.14" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
+<wire x1="149.86" y1="45.72" x2="149.86" y2="48.26" width="0.1524" layer="91" grouprefs="RIGHTBUTTONS"/>
+<label x="149.86" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON5" class="0">
@@ -5152,16 +5132,16 @@ LETTER landscape</description>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="B8" gate="1" pin="P1"/>
-<wire x1="132.08" y1="45.72" x2="132.08" y2="48.26" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<label x="132.08" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
+<wire x1="-2.54" y1="45.72" x2="-2.54" y2="48.26" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<label x="-2.54" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
 <net name="BUTTON6" class="0">
 <segment>
 <pinref part="B6" gate="1" pin="P"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="48.26" x2="149.86" y2="45.72" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
-<label x="149.86" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
+<wire x1="15.24" y1="48.26" x2="15.24" y2="45.72" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
+<label x="15.24" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
 </nets>
@@ -5170,6 +5150,10 @@ LETTER landscape</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

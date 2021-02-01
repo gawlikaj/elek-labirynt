@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -60,6 +60,8 @@
 </layers>
 <board>
 <plain>
+<text x="88.9" y="-10.16" size="1.778" layer="1">Designed by:  Andrew Gawlik
+Email:  gawlikaj@rose-hulman.edu</text>
 </plain>
 <libraries>
 <library name="switch-omron" urn="urn:adsk.eagle:library:377">
@@ -1420,7 +1422,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="B9" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="13.335" y="46.99" smashed="yes" rot="R90">
+<element name="B9" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="GREEN" x="13.335" y="46.99" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="13.335" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="13.335" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="9.652" y="43.942" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1429,7 +1431,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="13.335" y="46.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="18.415" y="43.942" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="B6" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="24.13" y="35.56" smashed="yes" rot="R90">
+<element name="B6" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="RED" x="24.13" y="35.56" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="24.13" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="24.13" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="20.447" y="32.512" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1438,7 +1440,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="24.13" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="29.21" y="32.512" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="B7" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="13.335" y="25.4" smashed="yes" rot="R90">
+<element name="B7" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="BLUE" x="13.335" y="25.4" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="13.335" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="13.335" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="9.652" y="22.352" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1447,7 +1449,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="13.335" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="18.415" y="22.352" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="B8" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="2.54" y="35.56" smashed="yes" rot="R90">
+<element name="B8" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="YELLOW" x="2.54" y="35.56" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="2.54" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="2.54" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-1.143" y="32.512" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1480,7 +1482,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="36.83" y="49.53" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="38.9636" y="51.8414" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="B2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="127.635" y="25.4" smashed="yes" rot="R270">
+<element name="B2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="BLUE" x="127.635" y="25.4" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="127.635" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="127.635" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="131.318" y="28.448" size="1.27" layer="25" ratio="10" rot="R270"/>
@@ -1489,7 +1491,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="127.635" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="122.555" y="28.448" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="B3" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="116.84" y="35.56" smashed="yes" rot="R270">
+<element name="B3" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="YELLOW" x="116.84" y="35.56" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="116.84" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="116.84" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="120.523" y="38.608" size="1.27" layer="25" ratio="10" rot="R270"/>
@@ -1498,7 +1500,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="116.84" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="111.76" y="38.608" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="B0" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="127.635" y="46.99" smashed="yes" rot="R270">
+<element name="B0" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="GREEN" x="127.635" y="46.99" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="127.635" y="46.99" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="127.635" y="46.99" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="131.318" y="50.038" size="1.27" layer="25" ratio="10" rot="R270"/>
@@ -1507,7 +1509,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="127.635" y="46.99" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="122.555" y="50.038" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="B1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="138.43" y="35.56" smashed="yes" rot="R270">
+<element name="B1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="RED" x="138.43" y="35.56" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="138.43" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="138.43" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="142.113" y="38.608" size="1.27" layer="25" ratio="10" rot="R270"/>
@@ -1540,7 +1542,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="104.14" y="22.86" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="102.0064" y="20.5486" size="0.9906" layer="27" ratio="10"/>
 </element>
-<element name="B5" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="59.69" y="35.56" smashed="yes" rot="R90">
+<element name="B5" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="BLACK" x="59.69" y="35.56" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="46.99" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="46.99" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="56.007" y="32.512" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1549,7 +1551,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="46.99" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="64.77" y="32.512" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="B4" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="81.28" y="35.56" smashed="yes" rot="R90">
+<element name="B4" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="BLACK" x="81.28" y="35.56" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="59.69" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="59.69" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="77.597" y="32.512" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -1593,7 +1595,7 @@ design rules under a new name.</description>
 <wire x1="39.37" y1="49.53" x2="39.37" y2="41.91" width="0.1524" layer="16"/>
 <wire x1="39.37" y1="41.91" x2="39.37" y2="33.02" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$1">
+<signal name="BUTTON9">
 <contactref element="R9" pad="2"/>
 <contactref element="B9" pad="4"/>
 <wire x1="15.5956" y1="50.2412" x2="33.5788" y2="50.2412" width="0.1524" layer="16"/>
@@ -1644,59 +1646,59 @@ design rules under a new name.</description>
 <wire x1="129.8956" y1="22.1488" x2="129.8956" y2="19.4056" width="0.1524" layer="16"/>
 <wire x1="129.8956" y1="19.4056" x2="129.54" y2="19.05" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$3">
+<signal name="BUTTON7">
 <contactref element="R7" pad="2"/>
 <contactref element="B7" pad="3"/>
 <wire x1="15.5956" y1="22.1488" x2="16.3068" y2="22.86" width="0.1524" layer="16"/>
 <wire x1="34.29" y1="22.86" x2="16.3068" y2="22.86" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$9">
+<signal name="BUTTON2">
 <contactref element="R2" pad="2"/>
 <contactref element="B2" pad="4"/>
 <wire x1="107.0102" y1="22.5298" x2="106.68" y2="22.86" width="0.1524" layer="16"/>
 <wire x1="125.3744" y1="22.1488" x2="107.3912" y2="22.1488" width="0.1524" layer="16"/>
 <wire x1="107.3912" y1="22.1488" x2="106.68" y2="22.86" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$10">
+<signal name="BUTTON3">
 <contactref element="R3" pad="2"/>
 <contactref element="B3" pad="4"/>
 <wire x1="114.5794" y1="32.3088" x2="107.3912" y2="32.3088" width="0.1524" layer="16"/>
 <wire x1="106.68" y1="33.02" x2="107.3912" y2="32.3088" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$11">
+<signal name="BUTTON0">
 <contactref element="R0" pad="2"/>
 <contactref element="B0" pad="3"/>
 <wire x1="125.3744" y1="50.2412" x2="107.3912" y2="50.2412" width="0.1524" layer="16"/>
 <wire x1="107.3912" y1="50.2412" x2="106.68" y2="49.53" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$12">
+<signal name="BUTTON1">
 <contactref element="R1" pad="2"/>
 <contactref element="B1" pad="3"/>
 <wire x1="125.0188" y1="38.8112" x2="136.1694" y2="38.8112" width="0.1524" layer="16"/>
 <wire x1="106.68" y1="41.91" x2="121.92" y2="41.91" width="0.1524" layer="16"/>
 <wire x1="121.92" y1="41.91" x2="125.0188" y2="38.8112" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$5">
+<signal name="BUTTON5">
 <contactref element="R5" pad="2"/>
 <contactref element="B5" pad="4"/>
 <wire x1="62.3824" y1="44.434896875" x2="62.23" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="62.23" y1="44.45" x2="61.9506" y2="44.1706" width="0.1524" layer="16"/>
 <wire x1="61.9506" y1="38.8112" x2="61.9506" y2="44.1706" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$6">
+<signal name="BUTTON4">
 <contactref element="R4" pad="2"/>
 <contactref element="B4" pad="4"/>
 <wire x1="83.82" y1="44.45" x2="83.5406" y2="44.1706" width="0.1524" layer="16"/>
 <wire x1="83.5406" y1="38.8112" x2="83.5406" y2="44.1706" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$4">
+<signal name="BUTTON8">
 <contactref element="R8" pad="2"/>
 <contactref element="B8" pad="4"/>
 <wire x1="19.3294" y1="41.91" x2="16.2306" y2="38.8112" width="0.1524" layer="16"/>
 <wire x1="4.8006" y1="38.8112" x2="16.2306" y2="38.8112" width="0.1524" layer="16"/>
 <wire x1="19.3294" y1="41.91" x2="34.29" y2="41.91" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$2">
+<signal name="BUTTON6">
 <contactref element="B6" pad="3"/>
 <contactref element="R6" pad="2"/>
 <wire x1="26.3906" y1="32.3088" x2="33.7312" y2="32.3088" width="0.1524" layer="16"/>
@@ -1713,6 +1715,10 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

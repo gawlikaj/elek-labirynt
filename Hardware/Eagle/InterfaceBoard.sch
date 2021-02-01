@@ -4809,6 +4809,70 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="CEM-1203_42_">
+<packages>
+<package name="CUI_CEM-1203(42)">
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.25" width="0.05" layer="39"/>
+<text x="-7.65526875" y="-0.571140625" size="1.272540625" layer="21">+</text>
+<text x="-2.803759375" y="6.90926875" size="1.271709375" layer="25">&gt;NAME</text>
+<text x="-3.31098125" y="-7.92628125" size="1.27423125" layer="27">&gt;VALUE</text>
+<text x="6.60768125" y="-0.570896875" size="1.271990625" layer="21">-</text>
+<pad name="P" x="-3.25" y="0" drill="0.8"/>
+<pad name="N" x="3.25" y="0" drill="0.8"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CEM-1203(42)">
+<wire x1="-0.635" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="-0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="3.175" x2="1.905" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-3.175" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<text x="-1.90926875" y="1.27285" size="1.78198125" layer="94">+</text>
+<text x="-3.815490625" y="8.90281875" size="1.78056875" layer="95">&gt;NAME</text>
+<text x="-3.8158" y="-11.4475" size="1.780709375" layer="96">&gt;VALUE</text>
+<text x="-1.907190625" y="-2.794940625" size="1.780040625" layer="94">-</text>
+<pin name="P" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="N" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CEM-1203(42)" prefix="LS">
+<description>12 mm, 3.5 V, 85 dB, Through Hole, Magnetic Audio Transducer Buzzer &lt;a href="https://pricing.snapeda.com/parts/CEM-1203%2842%29/CUI%20Devices/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CEM-1203(42)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CUI_CEM-1203(42)">
+<connects>
+<connect gate="G$1" pin="N" pad="N"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cem-1203(42)?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM"/>
+<attribute name="DESCRIPTION" value="12 mm, 3.5 V, 85 dB, Through Hole, Magnetic Audio Transducer Buzzer"/>
+<attribute name="MF" value="CUI Devices"/>
+<attribute name="MP" value="CEM-1203(42)"/>
+<attribute name="PACKAGE" value="TO-220 CUI Inc."/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/CEM-1203(42)/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4850,7 +4914,11 @@ LETTER landscape</description>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k"/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device="" value="Page1 "/>
+<part name="LS1" library="CEM-1203_42_" deviceset="CEM-1203(42)" device=""/>
+<part name="LS2" library="CEM-1203_42_" deviceset="CEM-1203(42)" device=""/>
+<part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4957,6 +5025,16 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <attribute name="SHEET" x="170.18" y="-11.43" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="101.6" y="6.35" size="2.54" layer="94"/>
 </instance>
+<instance part="LS1" gate="G$1" x="60.96" y="7.62" smashed="yes">
+<attribute name="NAME" x="57.144509375" y="16.52281875" size="1.78056875" layer="95"/>
+<attribute name="VALUE" x="57.1442" y="-3.8275" size="1.780709375" layer="96"/>
+</instance>
+<instance part="LS2" gate="G$1" x="25.4" y="7.62" smashed="yes">
+<attribute name="NAME" x="21.584509375" y="16.52281875" size="1.78056875" layer="95"/>
+<attribute name="VALUE" x="21.5842" y="-3.8275" size="1.780709375" layer="96"/>
+</instance>
+<instance part="X_4" gate="G$1" x="25.4" y="2.54" smashed="yes"/>
+<instance part="X_5" gate="G$1" x="60.96" y="2.54" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -5063,8 +5141,16 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <junction x="15.24" y="33.02" grouprefs="LEFTBUTTONS"/>
 <junction x="7.62" y="33.02" grouprefs="LEFTBUTTONS"/>
 </segment>
+<segment>
+<pinref part="X_4" gate="G$1" pin="0"/>
+<pinref part="LS2" gate="G$1" pin="N"/>
+</segment>
+<segment>
+<pinref part="X_5" gate="G$1" pin="0"/>
+<pinref part="LS1" gate="G$1" pin="N"/>
+</segment>
 </net>
-<net name="BUTTON9" class="0">
+<net name="BTN9" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="B9" gate="1" pin="P1"/>
@@ -5072,7 +5158,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="-22.86" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON7" class="0">
+<net name="BTN7" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="B7" gate="1" pin="P"/>
@@ -5080,7 +5166,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="30.48" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON2" class="0">
+<net name="BTN2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="B2" gate="1" pin="P1"/>
@@ -5088,7 +5174,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="111.76" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON3" class="0">
+<net name="BTN3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="B3" gate="1" pin="P1"/>
@@ -5096,7 +5182,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="132.08" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON0" class="0">
+<net name="BTN0" class="0">
 <segment>
 <pinref part="R0" gate="G$1" pin="2"/>
 <pinref part="B0" gate="1" pin="P"/>
@@ -5104,7 +5190,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="165.1" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON1" class="0">
+<net name="BTN1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="B1" gate="1" pin="P"/>
@@ -5112,7 +5198,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="149.86" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="RIGHTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON5" class="0">
+<net name="BTN5" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="B5" gate="1" pin="P1"/>
@@ -5120,7 +5206,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="60.96" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="MIDDLEBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON4" class="0">
+<net name="BTN4" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="B4" gate="1" pin="P1"/>
@@ -5128,7 +5214,7 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="81.28" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="MIDDLEBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON8" class="0">
+<net name="BTN8" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="B8" gate="1" pin="P1"/>
@@ -5136,12 +5222,26 @@ Email:  gawlikaj@rose-hulman.edu</text>
 <label x="-2.54" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
 </segment>
 </net>
-<net name="BUTTON6" class="0">
+<net name="BTN6" class="0">
 <segment>
 <pinref part="B6" gate="1" pin="P"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="48.26" x2="15.24" y2="45.72" width="0.1524" layer="91" grouprefs="LEFTBUTTONS"/>
 <label x="15.24" y="45.72" size="1.778" layer="95" xref="yes" grouprefs="LEFTBUTTONS"/>
+</segment>
+</net>
+<net name="SPK_LEFT" class="0">
+<segment>
+<pinref part="LS2" gate="G$1" pin="P"/>
+<wire x1="25.4" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
+<label x="10.16" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SPK_RIGHT" class="0">
+<segment>
+<pinref part="LS1" gate="G$1" pin="P"/>
+<wire x1="60.96" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
+<label x="50.8" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

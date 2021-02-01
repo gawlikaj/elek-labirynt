@@ -60,6 +60,8 @@
 </layers>
 <board>
 <plain>
+<text x="88.9" y="-10.16" size="1.778" layer="48" font="vector">Designed by:  Andrew Gawlik
+Email:  gawlikaj@rose-hulman.edu</text>
 </plain>
 <libraries>
 <library name="switch-omron" urn="urn:adsk.eagle:library:377">
@@ -1227,6 +1229,21 @@ type 0204, grid 5 mm</description>
 </package3d>
 </packages3d>
 </library>
+<library name="CEM-1203_42_">
+<packages>
+<package name="CUI_CEM-1203(42)">
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.25" width="0.05" layer="39"/>
+<text x="-7.65526875" y="-0.571140625" size="1.272540625" layer="21">+</text>
+<text x="-2.803759375" y="6.90926875" size="1.271709375" layer="25">&gt;NAME</text>
+<text x="-3.31098125" y="-7.92628125" size="1.27423125" layer="27">&gt;VALUE</text>
+<text x="6.60768125" y="-0.570896875" size="1.271990625" layer="21">-</text>
+<pad name="P" x="-3.25" y="0" drill="0.8"/>
+<pad name="N" x="3.25" y="0" drill="0.8"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1570,6 +1587,30 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="73.66" y="74.93" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="59.9186" y="49.1236" size="0.9906" layer="27" ratio="10" rot="R270"/>
 </element>
+<element name="LS1" library="CEM-1203_42_" package="CUI_CEM-1203(42)" value="CEM-1203(42)" x="119.38" y="10.16" smashed="yes">
+<attribute name="AVAILABILITY" value="Good" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cem-1203(42)?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="12 mm, 3.5 V, 85 dB, Through Hole, Magnetic Audio Transducer Buzzer" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="CUI Devices" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="CEM-1203(42)" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="116.576240625" y="17.06926875" size="1.271709375" layer="25"/>
+<attribute name="PACKAGE" value="TO-220 CUI Inc." x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/CEM-1203(42)/?ref=eda" x="119.38" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="116.06901875" y="2.23371875" size="1.27423125" layer="27"/>
+</element>
+<element name="LS2" library="CEM-1203_42_" package="CUI_CEM-1203(42)" value="CEM-1203(42)" x="91.44" y="3.81" smashed="yes">
+<attribute name="AVAILABILITY" value="Good" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cem-1203(42)?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="12 mm, 3.5 V, 85 dB, Through Hole, Magnetic Audio Transducer Buzzer" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="CUI Devices" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="CEM-1203(42)" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="88.636240625" y="10.71926875" size="1.271709375" layer="25"/>
+<attribute name="PACKAGE" value="TO-220 CUI Inc." x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/CEM-1203(42)/?ref=eda" x="91.44" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="88.12901875" y="-4.11628125" size="1.27423125" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="0">
@@ -1592,8 +1633,12 @@ design rules under a new name.</description>
 <wire x1="39.37" y1="22.86" x2="39.37" y2="33.02" width="0.1524" layer="16"/>
 <wire x1="39.37" y1="49.53" x2="39.37" y2="41.91" width="0.1524" layer="16"/>
 <wire x1="39.37" y1="41.91" x2="39.37" y2="33.02" width="0.1524" layer="16"/>
+<contactref element="LS2" pad="N"/>
+<contactref element="LS1" pad="N"/>
+<wire x1="122.63" y1="10.16" x2="39.37" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="94.69" y1="3.81" x2="122.63" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="BUTTON9">
+<signal name="BTN9">
 <contactref element="R9" pad="2"/>
 <contactref element="B9" pad="4"/>
 <wire x1="15.5956" y1="50.2412" x2="33.5788" y2="50.2412" width="0.1524" layer="16"/>
@@ -1644,63 +1689,69 @@ design rules under a new name.</description>
 <wire x1="129.8956" y1="22.1488" x2="129.8956" y2="19.4056" width="0.1524" layer="16"/>
 <wire x1="129.8956" y1="19.4056" x2="129.54" y2="19.05" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON7">
+<signal name="BTN7">
 <contactref element="R7" pad="2"/>
 <contactref element="B7" pad="3"/>
 <wire x1="15.5956" y1="22.1488" x2="16.3068" y2="22.86" width="0.1524" layer="16"/>
 <wire x1="34.29" y1="22.86" x2="16.3068" y2="22.86" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON2">
+<signal name="BTN2">
 <contactref element="R2" pad="2"/>
 <contactref element="B2" pad="4"/>
 <wire x1="107.0102" y1="22.5298" x2="106.68" y2="22.86" width="0.1524" layer="16"/>
 <wire x1="125.3744" y1="22.1488" x2="107.3912" y2="22.1488" width="0.1524" layer="16"/>
 <wire x1="107.3912" y1="22.1488" x2="106.68" y2="22.86" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON3">
+<signal name="BTN3">
 <contactref element="R3" pad="2"/>
 <contactref element="B3" pad="4"/>
 <wire x1="114.5794" y1="32.3088" x2="107.3912" y2="32.3088" width="0.1524" layer="16"/>
 <wire x1="106.68" y1="33.02" x2="107.3912" y2="32.3088" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON0">
+<signal name="BTN0">
 <contactref element="R0" pad="2"/>
 <contactref element="B0" pad="3"/>
 <wire x1="125.3744" y1="50.2412" x2="107.3912" y2="50.2412" width="0.1524" layer="16"/>
 <wire x1="107.3912" y1="50.2412" x2="106.68" y2="49.53" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON1">
+<signal name="BTN1">
 <contactref element="R1" pad="2"/>
 <contactref element="B1" pad="3"/>
 <wire x1="125.0188" y1="38.8112" x2="136.1694" y2="38.8112" width="0.1524" layer="16"/>
 <wire x1="106.68" y1="41.91" x2="121.92" y2="41.91" width="0.1524" layer="16"/>
 <wire x1="121.92" y1="41.91" x2="125.0188" y2="38.8112" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON5">
+<signal name="BTN5">
 <contactref element="R5" pad="2"/>
 <contactref element="B5" pad="4"/>
 <wire x1="62.3824" y1="44.434896875" x2="62.23" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="62.23" y1="44.45" x2="61.9506" y2="44.1706" width="0.1524" layer="16"/>
 <wire x1="61.9506" y1="38.8112" x2="61.9506" y2="44.1706" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON4">
+<signal name="BTN4">
 <contactref element="R4" pad="2"/>
 <contactref element="B4" pad="4"/>
 <wire x1="83.82" y1="44.45" x2="83.5406" y2="44.1706" width="0.1524" layer="16"/>
 <wire x1="83.5406" y1="38.8112" x2="83.5406" y2="44.1706" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON8">
+<signal name="BTN8">
 <contactref element="R8" pad="2"/>
 <contactref element="B8" pad="4"/>
 <wire x1="19.3294" y1="41.91" x2="16.2306" y2="38.8112" width="0.1524" layer="16"/>
 <wire x1="4.8006" y1="38.8112" x2="16.2306" y2="38.8112" width="0.1524" layer="16"/>
 <wire x1="19.3294" y1="41.91" x2="34.29" y2="41.91" width="0.1524" layer="16"/>
 </signal>
-<signal name="BUTTON6">
+<signal name="BTN6">
 <contactref element="B6" pad="3"/>
 <contactref element="R6" pad="2"/>
 <wire x1="26.3906" y1="32.3088" x2="33.7312" y2="32.3088" width="0.1524" layer="16"/>
 <wire x1="33.7312" y1="32.3088" x2="34.29" y2="33.02" width="0.1524" layer="16"/>
+</signal>
+<signal name="SPK_LEFT">
+<contactref element="LS2" pad="P"/>
+</signal>
+<signal name="SPK_RIGHT">
+<contactref element="LS1" pad="P"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -1713,6 +1764,10 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
