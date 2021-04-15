@@ -2,7 +2,7 @@
 Handheld Video Game
 
 Goals for this project:
-1. Learn how to use EagleCAD to develop a PCB design for the project that will connect all hardware that the software is dependent on.
+1. Learn how to use EagleCAD (or KiCAD) to develop a PCB design for the project that will connect all hardware that the software is dependent on.
 2. Write a bill of materials
 3. Apply knowledge and understanding from online coursework and prior in-person coursework into an independent project. (interrupts, finite state machines, usage of GIT, interaction with an LCD display, interaction with analog devices and fundamentals of an RTOS)
 4. Learn how the ESP32 microcontroller functions (and how it relates to the chosen board that I will be working with)
