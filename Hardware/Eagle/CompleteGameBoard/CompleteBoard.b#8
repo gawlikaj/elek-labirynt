@@ -144,6 +144,7 @@
 </layers>
 <board>
 <plain>
+<text x="-50.8" y="0" size="1.778" layer="48">Andrew Gawlik</text>
 </plain>
 <libraries>
 <library name="SparkFunBreakouts">
@@ -12197,6 +12198,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
+<package name="TACTILE_SWITCH_PTH_12MM" urn="urn:adsk.eagle:footprint:40105/1" library_version="1">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-5050)&lt;/p&gt;</description>
+<wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
+<wire x1="5" y1="0.2" x2="5" y2="1" width="0.2032" layer="51"/>
+<wire x1="-6" y1="4" x2="-6" y2="5" width="0.2032" layer="21"/>
+<wire x1="-5" y1="6" x2="5" y2="6" width="0.2032" layer="21"/>
+<wire x1="6" y1="5" x2="6" y2="4" width="0.2032" layer="21"/>
+<wire x1="6" y1="1" x2="6" y2="-1" width="0.2032" layer="21"/>
+<wire x1="6" y1="-4" x2="6" y2="-5" width="0.2032" layer="21"/>
+<wire x1="5" y1="-6" x2="-5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-5" x2="-6" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.2032" layer="21"/>
+<wire x1="-6" y1="5" x2="-5" y2="6" width="0.2032" layer="21" curve="-90"/>
+<wire x1="5" y1="6" x2="6" y2="5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-5" y1="-6" x2="-6" y2="-5" width="0.2032" layer="21" curve="-90"/>
+<circle x="0" y="0" radius="3.5" width="0.2032" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<pad name="4" x="-6.25" y="2.5" drill="1.2" diameter="2.159"/>
+<pad name="2" x="-6.25" y="-2.5" drill="1.2" diameter="2.159"/>
+<pad name="1" x="6.25" y="-2.5" drill="1.2" diameter="2.159"/>
+<pad name="3" x="6.25" y="2.5" drill="1.2" diameter="2.159"/>
+<text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SWITCH_SPDT_PTH_11.6X4.0MM" urn="urn:adsk.eagle:package:40177/1" type="box" library_version="1">
@@ -12213,6 +12245,14 @@ Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
 Datasheet</description>
 <packageinstances>
 <packageinstance name="TACTILE_SWITCH_SMD_12MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE_SWITCH_PTH_12MM" urn="urn:adsk.eagle:package:40164/1" type="box" library_version="1">
+<description>Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square
+Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
+Datasheet (B3F-5050)</description>
+<packageinstances>
+<packageinstance name="TACTILE_SWITCH_PTH_12MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -12344,6 +12384,45 @@ LED
 </description>
 <packageinstances>
 <packageinstance name="LED_5MM-KIT"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="SparkFun-Aesthetics" urn="urn:adsk.eagle:library:507">
+<description>&lt;h3&gt;SparkFun Aesthetics&lt;/h3&gt;
+This library contiains non-functional items such as logos, build/ordering notes, frame blocks, etc. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="CREATIVE_COMMONS" urn="urn:adsk.eagle:footprint:37005/1" library_version="1">
+<description>&lt;h3&gt;Creative Commons License Template&lt;/h3&gt;
+&lt;p&gt;CC BY-SA 4.0 License with &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;link to license&lt;/a&gt; and placeholder for designer name.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FRAME_LEDGER&lt;/li&gt;
+&lt;li&gt;FRAME_LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="CREATIVE_COMMONS" urn="urn:adsk.eagle:package:37121/1" type="box" library_version="1">
+<description>Creative Commons License Template
+CC BY-SA 4.0 License with link to license and placeholder for designer name.
+Devices using:
+FRAME_LEDGER
+FRAME_LETTER</description>
+<packageinstances>
+<packageinstance name="CREATIVE_COMMONS"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -12541,7 +12620,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="A1" library="SparkFunBreakouts" package="WRL-17381" value="" x="-11.43" y="-72.39" smashed="yes"/>
+<element name="A1" library="SparkFunBreakouts" package="WRL-17381" value="ESP32_MICROCONTROLLER" x="-11.43" y="-72.39" smashed="yes"/>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10k" x="-8.89" y="-168.91" smashed="yes">
 <attribute name="NAME" x="-10.8966" y="-167.7416" size="0.9906" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="18" x="-8.89" y="-77.47" size="1.778" layer="27" display="off"/>
@@ -12572,7 +12651,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="-8.89" y="-102.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="4.2164" y="-171.2214" size="0.9906" layer="27" ratio="10"/>
 </element>
-<element name="S5" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="SWITCH_SPDT_PTH_11.6X4.0MM" package3d_urn="urn:adsk.eagle:package:40177/1" value="" x="34.29" y="-157.48" smashed="yes">
+<element name="S5" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="SWITCH_SPDT_PTH_11.6X4.0MM" package3d_urn="urn:adsk.eagle:package:40177/1" value="STANDBY" x="34.29" y="-157.48" smashed="yes">
 <attribute name="NAME" x="31.877" y="-157.48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-08261" x="-16.51" y="-99.06" size="1.778" layer="27" display="off"/>
 <attribute name="SF_SKU" value="COM-00102" x="-16.51" y="-99.06" size="1.778" layer="27" display="off"/>
@@ -12616,39 +12695,38 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="-54.61" y="-129.54" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="19.4564" y="-171.2214" size="0.9906" layer="27" ratio="10"/>
 </element>
-<element name="S0" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="-3.81" y="-143.51" smashed="yes">
-<attribute name="NAME" x="-3.81" y="-137.287" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="SWCH-11967" x="-49.53" y="-139.7" size="1.778" layer="27" display="off"/>
-<attribute name="SF_SKU" value="COM-12993" x="-49.53" y="-139.7" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-3.81" y="-149.733" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="S0" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_PTH_12MM" package3d_urn="urn:adsk.eagle:package:40164/1" value="MOMENTARY-SWITCH-SPST-PTH-12MM" x="-6.25" y="-237.21" smashed="yes">
+<attribute name="NAME" x="-6.25" y="-230.987" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="SWCH-09185" x="-51.97" y="-233.4" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-09190" x="-51.97" y="-233.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-6.25" y="-243.433" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="13.97" y="-143.51" smashed="yes">
-<attribute name="NAME" x="13.97" y="-137.287" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="SWCH-11967" x="-49.53" y="-154.94" size="1.778" layer="27" display="off"/>
-<attribute name="SF_SKU" value="COM-12993" x="-49.53" y="-154.94" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="13.97" y="-149.733" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_PTH_12MM" package3d_urn="urn:adsk.eagle:package:40164/1" value="MOMENTARY-SWITCH-SPST-PTH-12MM" x="-6.25" y="-219.51" smashed="yes">
+<attribute name="NAME" x="-6.25" y="-213.287" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="SWCH-09185" x="-69.75" y="-230.94" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-09190" x="-69.75" y="-230.94" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-6.25" y="-225.733" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="S2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="31.75" y="-143.51" smashed="yes">
-<attribute name="NAME" x="31.75" y="-137.287" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="SWCH-11967" x="-49.53" y="-170.18" size="1.778" layer="27" display="off"/>
-<attribute name="SF_SKU" value="COM-12993" x="-49.53" y="-170.18" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="31.75" y="-149.733" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="S2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_PTH_12MM" package3d_urn="urn:adsk.eagle:package:40164/1" value="MOMENTARY-SWITCH-SPST-PTH-12MM" x="-6.25" y="-201.81" smashed="yes">
+<attribute name="NAME" x="-6.25" y="-195.587" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="SWCH-09185" x="-87.53" y="-228.48" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-09190" x="-87.53" y="-228.48" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-6.25" y="-208.033" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="S3" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="49.53" y="-143.51" smashed="yes">
-<attribute name="NAME" x="49.53" y="-137.287" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="SWCH-11967" x="-49.53" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="SF_SKU" value="COM-12993" x="-49.53" y="-185.42" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="49.53" y="-149.733" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="S3" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_PTH_12MM" package3d_urn="urn:adsk.eagle:package:40164/1" value="MOMENTARY-SWITCH-SPST-PTH-12MM" x="-6.25" y="-184.11" smashed="yes">
+<attribute name="NAME" x="-6.25" y="-177.887" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="SWCH-09185" x="-105.31" y="-226.02" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-09190" x="-105.31" y="-226.02" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-6.25" y="-190.333" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="A2" library="SparkFunBreakouts" package="LCD-15143" value="" x="-11.43" y="-134.62" smashed="yes"/>
-<element name="U$1" library="SparkFunBreakouts" package="COM-15168" value="COM-15168" x="31.75" y="-125.73" smashed="yes"/>
+<element name="A2" library="SparkFunBreakouts" package="LCD-15143" value="TFT" x="-11.43" y="-134.62" smashed="yes"/>
+<element name="A3" library="SparkFunBreakouts" package="COM-15168" value="COM-15168" x="31.75" y="-125.73" smashed="yes"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="CREATIVE_COMMONS" package3d_urn="urn:adsk.eagle:package:37121/1" value="001" x="-79.333753125" y="0" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VUSB">
-<contactref element="A1" pad="3@J2"/>
 </signal>
 <signal name="VBAT">
-<contactref element="A1" pad="1@J2"/>
 </signal>
 <signal name="GND">
 <contactref element="A2" pad="1@J2"/>
@@ -12661,7 +12739,6 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="LS1" pad="-"/>
 <contactref element="LS2" pad="-"/>
-<contactref element="U$1" pad="4@J2"/>
 <contactref element="A1" pad="4@J4"/>
 <wire x1="-3.81" y1="-168.91" x2="-11.43" y2="-168.91" width="0" layer="19" extent="1-1"/>
 <wire x1="3.81" y1="-168.91" x2="-3.81" y2="-168.91" width="0" layer="19" extent="1-1"/>
@@ -12672,44 +12749,44 @@ design rules under a new name.</description>
 <wire x1="50.8" y1="-153.67" x2="41.91" y2="-154.94" width="0" layer="19" extent="1-1"/>
 <wire x1="58.42" y1="-153.67" x2="50.8" y2="-153.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-3.81" y1="-133.35" x2="8.18" y2="-158.75" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="-76.2" x2="-3.81" y2="-133.35" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="-50.8" x2="40.64" y2="-76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-50.8" x2="-3.81" y2="-133.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3">
-<contactref element="U$1" pad="3@J2"/>
 </signal>
 <signal name="BUTTON3">
 <contactref element="R3" pad="2"/>
 <contactref element="S3" pad="1"/>
 <contactref element="A1" pad="4@J2"/>
-<wire x1="56.505" y1="-146.01" x2="1.27" y2="-168.91" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-40.64" x2="56.505" y2="-146.01" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="-168.91" x2="0" y2="-186.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-40.64" x2="1.27" y2="-168.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON0">
 <contactref element="R0" pad="2"/>
 <contactref element="S0" pad="1"/>
 <contactref element="A1" pad="9@J2"/>
-<wire x1="55.88" y1="-153.67" x2="3.165" y2="-146.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-27.94" x2="3.165" y2="-146.01" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="-153.67" x2="0" y2="-239.71" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-27.94" x2="55.88" y2="-153.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON2">
 <contactref element="R2" pad="2"/>
 <contactref element="S2" pad="1"/>
 <contactref element="A1" pad="5@J2"/>
-<wire x1="38.725" y1="-146.01" x2="-6.35" y2="-168.91" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-38.1" x2="38.725" y2="-146.01" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="-168.91" x2="0" y2="-204.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-38.1" x2="-6.35" y2="-168.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON1">
 <contactref element="R1" pad="2"/>
 <contactref element="S1" pad="1"/>
 <contactref element="A1" pad="7@J2"/>
-<wire x1="63.5" y1="-153.67" x2="20.945" y2="-146.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-33.02" x2="20.945" y2="-146.01" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="-153.67" x2="0" y2="-222.01" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-33.02" x2="63.5" y2="-153.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON4">
 <contactref element="S4" pad="1"/>
 <contactref element="R4" pad="2"/>
+<contactref element="A1" pad="9@J4"/>
 <wire x1="3.165" y1="-161.25" x2="8.89" y2="-168.91" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-38.1" x2="3.165" y2="-161.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D1" pad="A"/>
@@ -12740,22 +12817,19 @@ design rules under a new name.</description>
 <contactref element="S4" pad="3"/>
 <contactref element="A2" pad="2@J2"/>
 <contactref element="A1" pad="2@J4"/>
-<wire x1="3.165" y1="-141.01" x2="3.165" y2="-156.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.27" y1="-133.35" x2="3.165" y2="-141.01" width="0" layer="19" extent="1-1"/>
-<wire x1="20.945" y1="-141.01" x2="3.165" y2="-141.01" width="0" layer="19" extent="1-1"/>
-<wire x1="38.725" y1="-141.01" x2="20.945" y2="-141.01" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="-154.94" x2="38.725" y2="-141.01" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="-168.91" x2="34.29" y2="-154.94" width="0" layer="19" extent="1-1"/>
-<wire x1="56.505" y1="-141.01" x2="38.725" y2="-141.01" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-217.01" x2="0" y2="-234.71" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-199.31" x2="0" y2="-217.01" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-181.61" x2="0" y2="-199.31" width="0" layer="19" extent="1-1"/>
+<wire x1="3.165" y1="-156.25" x2="0" y2="-181.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.27" y1="-133.35" x2="3.165" y2="-156.25" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="-168.91" x2="3.165" y2="-156.25" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="-154.94" x2="24.13" y2="-168.91" width="0" layer="19" extent="1-1"/>
 <wire x1="10.16" y1="-55.88" x2="-1.27" y2="-133.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LSPK">
 <contactref element="LS1" pad="+"/>
 <contactref element="A1" pad="6@J4"/>
 <wire x1="10.16" y1="-45.72" x2="14.68" y2="-158.75" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="RSPK">
-<contactref element="LS2" pad="+"/>
 </signal>
 <signal name="PWM">
 <contactref element="A2" pad="3@J2"/>
@@ -12799,6 +12873,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="RSPK">
 <contactref element="A1" pad="5@J4"/>
+<contactref element="LS2" pad="+"/>
+<wire x1="10.16" y1="-48.26" x2="27.38" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
