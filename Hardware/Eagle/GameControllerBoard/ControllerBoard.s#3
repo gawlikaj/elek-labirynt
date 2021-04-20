@@ -5658,6 +5658,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="63.5" y="63.5" size="1.778" layer="91" grouprefs="ESP32_UC1">Do not connect to pins
 23 and 24 as they share
 pins with the Qwiic Cable</text>
+<text x="174.2948" y="18.9484" size="2.54" layer="94" font="vector">Andrew Gawlik</text>
+<text x="245.364" y="14.986" size="2.54" layer="94" font="vector">v1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="5.08" y="7.62" smashed="yes"/>

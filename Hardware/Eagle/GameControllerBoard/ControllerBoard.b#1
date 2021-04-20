@@ -144,6 +144,7 @@
 </layers>
 <board>
 <plain>
+<text x="36.83" y="-21.59" size="1.778" layer="48">Andrew Gawlik</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics" urn="urn:adsk.eagle:library:507">

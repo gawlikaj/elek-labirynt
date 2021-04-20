@@ -7335,6 +7335,11 @@ pins with the Qwiic Cable</text>
 <wire x1="170.18" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91" grouprefs="HEADERS"/>
 <label x="167.64" y="71.12" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="HEADERS"/>
 </segment>
+<segment>
+<pinref part="A1" gate="G$1" pin="A4"/>
+<wire x1="93.98" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
+<label x="111.76" y="99.06" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 </nets>
 </sheet>
