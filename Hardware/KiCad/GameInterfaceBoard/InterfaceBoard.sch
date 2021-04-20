@@ -1,0 +1,711 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 11693 8846
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5500 5600 5500 4700
+Text Label 5500 5600 0    70   ~ 0
+BUTTON3
+Wire Wire Line
+	2500 5000 2400 5000
+Wire Wire Line
+	2400 5000 2400 5200
+Wire Wire Line
+	2400 5200 2300 5200
+Text Label 2300 5200 2    70   ~ 0
+BUTTON3
+Wire Wire Line
+	7700 4600 7700 5600
+Text Label 7700 5600 0    70   ~ 0
+BUTTON0
+Wire Wire Line
+	2500 4700 2300 4700
+Wire Wire Line
+	2300 4700 2300 4500
+Wire Wire Line
+	2300 4500 2100 4500
+Text Label 2100 4500 2    70   ~ 0
+BUTTON0
+Wire Wire Line
+	6300 5600 6300 4700
+Text Label 6300 5600 0    70   ~ 0
+BUTTON2
+Wire Wire Line
+	2500 4900 2300 4900
+Wire Wire Line
+	2300 4900 2300 5000
+Wire Wire Line
+	2300 5000 2200 5000
+Text Label 2200 5000 2    70   ~ 0
+BUTTON2
+Wire Wire Line
+	7000 4500 7000 5600
+Text Label 7000 5600 0    70   ~ 0
+BUTTON1
+Wire Wire Line
+	2500 4800 2200 4800
+Text Label 2200 4800 2    70   ~ 0
+BUTTON1
+Wire Wire Line
+	8600 6200 8600 6000
+Text Label 8600 6200 0    10   ~ 0
+GND
+Wire Wire Line
+	5500 6100 5500 6000
+Wire Wire Line
+	6300 6000 6300 6100
+Wire Wire Line
+	5500 6100 6300 6100
+Wire Wire Line
+	6300 6100 6700 6100
+Wire Wire Line
+	6700 6100 6700 6200
+Wire Wire Line
+	7700 6100 7700 6000
+Wire Wire Line
+	7000 6000 7000 6100
+Wire Wire Line
+	7000 6100 7700 6100
+Wire Wire Line
+	7000 6100 6700 6100
+Connection ~ 6300 6100
+Connection ~ 7000 6100
+Connection ~ 6700 6100
+Text Label 5500 6100 0    10   ~ 0
+GND
+Wire Wire Line
+	10500 6200 10400 6200
+Wire Wire Line
+	10400 6200 10100 6200
+Wire Wire Line
+	10100 6200 10100 5900
+Wire Wire Line
+	10500 4900 10500 6200
+Connection ~ 10400 6200
+Text Label 10500 6200 0    10   ~ 0
+GND
+Wire Wire Line
+	9600 2000 9600 2100
+Text Label 9600 2000 0    10   ~ 0
+GND
+Wire Wire Line
+	9600 1300 9600 1400
+Text Label 9600 1300 0    10   ~ 0
+GND
+Wire Wire Line
+	6000 1900 5700 1900
+Wire Wire Line
+	5700 1900 5700 2000
+Text Label 6000 1900 0    10   ~ 0
+GND
+Wire Wire Line
+	3400 5300 3700 5300
+Text Label 3400 5300 0    10   ~ 0
+GND
+Wire Wire Line
+	5500 3300 6300 3300
+Wire Wire Line
+	6300 3300 6800 3300
+Wire Wire Line
+	7600 4200 7600 3300
+Wire Wire Line
+	6800 3300 7100 3300
+Wire Wire Line
+	7100 3300 7600 3300
+Wire Wire Line
+	5500 4300 5500 3300
+Wire Wire Line
+	6300 4300 6300 3300
+Wire Wire Line
+	7100 4100 7100 3300
+Connection ~ 6800 3300
+Connection ~ 6300 3300
+Connection ~ 7100 3300
+Text Label 5500 3300 0    10   ~ 0
+3.3V
+Wire Wire Line
+	8700 4200 8700 3400
+Text Label 8700 4200 0    10   ~ 0
+3.3V
+Wire Wire Line
+	10100 3600 10100 3500
+Wire Wire Line
+	10100 3500 10100 3300
+Wire Wire Line
+	10100 3500 10500 3500
+Wire Wire Line
+	10500 3500 10500 4700
+Connection ~ 10100 3500
+Text Label 10100 3600 0    10   ~ 0
+3.3V
+Wire Wire Line
+	6000 1700 5700 1700
+Wire Wire Line
+	5700 1700 5700 1500
+Text Label 6000 1700 0    10   ~ 0
+3.3V
+Wire Wire Line
+	3400 5200 4700 5200
+Text Label 3400 5200 0    10   ~ 0
+3.3V
+Wire Wire Line
+	8600 4600 8600 5600
+Text Label 8600 5500 0    70   ~ 0
+BUTTON4
+Wire Wire Line
+	2500 5100 2500 5400
+Wire Wire Line
+	2500 5400 2400 5400
+Text Label 2400 5400 2    70   ~ 0
+BUTTON4
+Wire Wire Line
+	10100 5600 10100 5500
+Wire Wire Line
+	10200 4800 10100 4800
+Wire Wire Line
+	10100 4800 10100 5100
+Wire Wire Line
+	10100 4800 10100 4400
+Connection ~ 10100 4800
+Text Label 10100 4800 2    70   ~ 0
+AWAKE
+Wire Wire Line
+	2500 4600 2400 4600
+Wire Wire Line
+	2400 4600 2400 4300
+Wire Wire Line
+	2400 4300 2100 4300
+Text Label 2100 4300 2    70   ~ 0
+AWAKE
+Wire Wire Line
+	10100 4100 10100 4000
+Wire Wire Line
+	9700 2100 10100 2100
+Text Label 10100 2100 0    70   ~ 0
+LSPK
+Wire Wire Line
+	2500 4500 2500 4100
+Wire Wire Line
+	2500 4100 2100 4100
+Text Label 2100 4100 2    70   ~ 0
+LSPK
+Wire Wire Line
+	6500 2500 6300 2500
+Text Label 6300 2500 2    70   ~ 0
+PWM
+Wire Wire Line
+	3400 5100 4200 5100
+Text Label 4200 5100 0    70   ~ 0
+PWM
+Wire Wire Line
+	6700 2500 6700 2600
+Wire Wire Line
+	6700 2600 5900 2600
+Text Label 5900 2600 2    70   ~ 0
+TE
+Wire Wire Line
+	3400 4700 3900 4700
+Wire Wire Line
+	3900 4700 3900 4300
+Wire Wire Line
+	3900 4300 4400 4300
+Text Label 4400 4300 0    70   ~ 0
+TE
+Wire Wire Line
+	6900 2500 7500 2500
+Text Label 7500 2500 0    70   ~ 0
+DC
+Wire Wire Line
+	3400 4600 3800 4600
+Wire Wire Line
+	3800 4600 3800 4100
+Wire Wire Line
+	3800 4100 4400 4100
+Text Label 4400 4100 0    70   ~ 0
+DC
+Wire Wire Line
+	7500 2000 7800 2000
+Text Label 7800 2000 0    70   ~ 0
+CIPO
+Wire Wire Line
+	4000 4500 4400 4500
+Wire Wire Line
+	3400 4800 4000 4800
+Wire Wire Line
+	4000 4800 4000 4500
+Text Label 4400 4500 0    70   ~ 0
+CIPO
+Wire Wire Line
+	7500 1800 7800 1800
+Text Label 7800 1800 0    70   ~ 0
+COPI
+Wire Wire Line
+	3400 4900 4100 4900
+Wire Wire Line
+	4100 4900 4100 4700
+Wire Wire Line
+	4100 4700 4400 4700
+Text Label 4400 4700 0    70   ~ 0
+COPI
+Wire Wire Line
+	7500 1600 7800 1600
+Text Label 7800 1600 0    70   ~ 0
+SCLK
+Wire Wire Line
+	3400 5000 4200 5000
+Wire Wire Line
+	4200 5000 4200 4900
+Wire Wire Line
+	4200 4900 4400 4900
+Text Label 4400 4900 0    70   ~ 0
+SCLK
+Wire Wire Line
+	6800 1200 7500 1200
+Text Label 7500 1200 0    70   ~ 0
+LCDCS
+Wire Wire Line
+	3400 4500 3700 4500
+Wire Wire Line
+	3700 4500 3700 3900
+Wire Wire Line
+	3700 3900 4300 3900
+Text Label 4300 3900 0    70   ~ 0
+LCDCS
+Wire Wire Line
+	6600 1200 6200 1200
+Text Label 6200 1200 2    70   ~ 0
+SDCS
+Wire Wire Line
+	3400 4400 3600 4400
+Wire Wire Line
+	3600 4400 3600 3700
+Wire Wire Line
+	3600 3700 4300 3700
+Text Label 4300 3700 0    70   ~ 0
+SDCS
+Wire Wire Line
+	9700 1400 10100 1400
+Text Label 10100 1400 0    70   ~ 0
+RSPK
+Wire Wire Line
+	3400 4300 3500 4300
+Wire Wire Line
+	3500 4300 3500 3600
+Wire Wire Line
+	3500 3600 4100 3600
+Text Label 4100 3600 0    70   ~ 0
+RSPK
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R2
+U 1 1 81BCC900
+P 6300 5800
+F 0 "R2" H 6150 5859 59  0000 L BNN
+F 1 "10k" H 6150 5670 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 6300 5800 50  0001 C CNN
+F 3 "" H 6300 5800 50  0001 C CNN
+	1    6300 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R0
+U 1 1 536DA686
+P 7700 5800
+F 0 "R0" H 7550 5859 59  0000 L BNN
+F 1 "10k" H 7550 5670 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 7700 5800 50  0001 C CNN
+F 3 "" H 7700 5800 50  0001 C CNN
+	1    7700 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R1
+U 1 1 B9BAFB95
+P 7000 5800
+F 0 "R1" H 6850 5859 59  0000 L BNN
+F 1 "10k" H 6850 5670 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 7000 5800 50  0001 C CNN
+F 3 "" H 7000 5800 50  0001 C CNN
+	1    7000 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R3
+U 1 1 26020ECB
+P 5500 5800
+F 0 "R3" H 5350 5859 59  0000 L BNN
+F 1 "10k" H 5350 5670 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 5500 5800 50  0001 C CNN
+F 3 "" H 5500 5800 50  0001 C CNN
+	1    5500 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R4
+U 1 1 98DC0D12
+P 8600 5800
+F 0 "R4" H 8450 5859 59  0000 L BNN
+F 1 "10k" H 8450 5670 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 8600 5800 50  0001 C CNN
+F 3 "" H 8600 5800 50  0001 C CNN
+	1    8600 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:FRAME-LETTER FRAME1
+U 1 1 73DA64CA
+P 1100 8000
+F 0 "FRAME1" H 1100 8000 50  0001 C CNN
+F 1 "FRAME-LETTER" H 1100 8000 50  0001 C CNN
+F 2 "InterfaceBoard:CREATIVE_COMMONS" H 1100 8000 50  0001 C CNN
+F 3 "" H 1100 8000 50  0001 C CNN
+	1    1100 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:FRAME-LETTER FRAME1
+U 2 1 73DA64C6
+P 6900 8000
+F 0 "FRAME1" H 6900 8000 50  0001 C CNN
+F 1 "FRAME-LETTER" H 6900 8000 50  0001 C CNN
+F 2 "InterfaceBoard:CREATIVE_COMMONS" H 6900 8000 50  0001 C CNN
+F 3 "" H 6900 8000 50  0001 C CNN
+	2    6900 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:MOMENTARY-SWITCH-SPST-PTH-12MM S4
+U 1 1 B6926EE6
+P 8600 4400
+F 0 "S4" H 8600 4460 70  0000 C BNN
+F 1 "MOMENTARY-SWITCH-SPST-PTH-12MM" H 8600 4380 70  0000 C TNN
+F 2 "InterfaceBoard:TACTILE_SWITCH_PTH_12MM" H 8600 4400 50  0001 C CNN
+F 3 "" H 8600 4400 50  0001 C CNN
+	1    8600 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:3.3V #SUPPLY02
+U 1 1 33EFDB7C
+P 8700 3400
+F 0 "#SUPPLY02" H 8700 3400 50  0001 C CNN
+F 1 "3.3V" H 8700 3610 59  0000 C BNN
+F 2 "" H 8700 3400 50  0001 C CNN
+F 3 "" H 8700 3400 50  0001 C CNN
+	1    8700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:3.3V #SUPPLY03
+U 1 1 D5692080
+P 6800 3300
+F 0 "#SUPPLY03" H 6800 3300 50  0001 C CNN
+F 1 "3.3V" H 6800 3410 59  0000 C BNN
+F 2 "" H 6800 3300 50  0001 C CNN
+F 3 "" H 6800 3300 50  0001 C CNN
+	1    6800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:3.3V #SUPPLY04
+U 1 1 6DF68C43
+P 7100 5700
+F 0 "#SUPPLY04" H 7100 5700 50  0001 C CNN
+F 1 "3.3V" H 7100 5810 59  0000 C BNN
+F 2 "" H 7100 5700 50  0001 C CNN
+F 3 "" H 7100 5700 50  0001 C CNN
+	1    7100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:GND #GND07
+U 1 1 9CDE76EF
+P 8600 6300
+F 0 "#GND07" H 8600 6300 50  0001 C CNN
+F 1 "GND" H 8600 6290 59  0000 C TNN
+F 2 "" H 8600 6300 50  0001 C CNN
+F 3 "" H 8600 6300 50  0001 C CNN
+	1    8600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:GND #GND08
+U 1 1 DF24F9E8
+P 6700 6300
+F 0 "#GND08" H 6700 6300 50  0001 C CNN
+F 1 "GND" H 6700 6290 59  0000 C TNN
+F 2 "" H 6700 6300 50  0001 C CNN
+F 3 "" H 6700 6300 50  0001 C CNN
+	1    6700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:MOMENTARY-SWITCH-SPST-PTH-12MM S0
+U 1 1 974DD244
+P 7600 4400
+F 0 "S0" H 7600 4460 70  0000 C BNN
+F 1 "MOMENTARY-SWITCH-SPST-PTH-12MM" H 7600 4380 70  0000 C TNN
+F 2 "InterfaceBoard:TACTILE_SWITCH_PTH_12MM" H 7600 4400 50  0001 C CNN
+F 3 "" H 7600 4400 50  0001 C CNN
+	1    7600 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:MOMENTARY-SWITCH-SPST-PTH-12MM S1
+U 1 1 1E5BC2E8
+P 7000 4300
+F 0 "S1" H 7000 4360 70  0000 C BNN
+F 1 "MOMENTARY-SWITCH-SPST-PTH-12MM" H 7000 4280 70  0000 C TNN
+F 2 "InterfaceBoard:TACTILE_SWITCH_PTH_12MM" H 7000 4300 50  0001 C CNN
+F 3 "" H 7000 4300 50  0001 C CNN
+	1    7000 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:MOMENTARY-SWITCH-SPST-PTH-12MM S2
+U 1 1 28CBA443
+P 6300 4500
+F 0 "S2" H 6300 4560 70  0000 C BNN
+F 1 "MOMENTARY-SWITCH-SPST-PTH-12MM" H 6300 4480 70  0000 C TNN
+F 2 "InterfaceBoard:TACTILE_SWITCH_PTH_12MM" H 6300 4500 50  0001 C CNN
+F 3 "" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:MOMENTARY-SWITCH-SPST-PTH-12MM S3
+U 1 1 FC517BE8
+P 5500 4500
+F 0 "S3" H 5500 4560 70  0000 C BNN
+F 1 "MOMENTARY-SWITCH-SPST-PTH-12MM" H 5500 4480 70  0000 C TNN
+F 2 "InterfaceBoard:TACTILE_SWITCH_PTH_12MM" H 5500 4500 50  0001 C CNN
+F 3 "" H 5500 4500 50  0001 C CNN
+	1    5500 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:SWITCH-SPDT-PTH-11.6X4.0MM S5
+U 1 1 EB34027B
+P 10300 4800
+F 0 "S5" H 10350 4920 70  0000 C BNN
+F 1 "STANDBY" H 10340 4670 70  0000 C TNN
+F 2 "InterfaceBoard:SWITCH_SPDT_PTH_11.6X4.0MM" H 10300 4800 50  0001 C CNN
+F 3 "" H 10300 4800 50  0001 C CNN
+	1    10300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:LED5MM-KIT D1
+U 1 1 46E0FFF8
+P 10100 5700
+F 0 "D1" V 9965 5520 70  0000 L BNN
+F 1 "Green" V 10175 5520 70  0000 L TNN
+F 2 "InterfaceBoard:LED_5MM-KIT" H 10100 5700 50  0001 C CNN
+F 3 "" H 10100 5700 50  0001 C CNN
+	1    10100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:LED5MM-KIT D2
+U 1 1 904CFDB9
+P 10100 4200
+F 0 "D2" V 9965 4020 70  0000 L BNN
+F 1 "Red" V 10175 4020 70  0000 L TNN
+F 2 "InterfaceBoard:LED_5MM-KIT" H 10100 4200 50  0001 C CNN
+F 3 "" H 10100 4200 50  0001 C CNN
+	1    10100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R5
+U 1 1 A2C0188A
+P 10100 5300
+F 0 "R5" H 9950 5359 59  0000 L BNN
+F 1 "470" H 9950 5170 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 10100 5300 50  0001 C CNN
+F 3 "" H 10100 5300 50  0001 C CNN
+	1    10100 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:R-US_0204_5 R6
+U 1 1 33431AD7
+P 10100 3800
+F 0 "R6" H 9950 3859 59  0000 L BNN
+F 1 "470" H 9950 3670 59  0000 L BNN
+F 2 "InterfaceBoard:0204_5" H 10100 3800 50  0001 C CNN
+F 3 "" H 10100 3800 50  0001 C CNN
+	1    10100 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:3.3V #SUPPLY01
+U 1 1 E46721A6
+P 10100 3300
+F 0 "#SUPPLY01" H 10100 3300 50  0001 C CNN
+F 1 "3.3V" H 10100 3410 59  0000 C BNN
+F 2 "" H 10100 3300 50  0001 C CNN
+F 3 "" H 10100 3300 50  0001 C CNN
+	1    10100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:GND #GND05
+U 1 1 EF27308A
+P 10400 6300
+F 0 "#GND05" H 10400 6300 50  0001 C CNN
+F 1 "GND" H 10400 6290 59  0000 C TNN
+F 2 "" H 10400 6300 50  0001 C CNN
+F 3 "" H 10400 6300 50  0001 C CNN
+	1    10400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:BUZZER-PTH LS1
+U 1 1 CB84500A
+P 9700 2200
+F 0 "LS1" H 9600 2390 70  0000 L BNN
+F 1 "BUZZER-PTH" H 9910 2200 70  0000 L BNN
+F 2 "InterfaceBoard:BUZZER-12MM" H 9700 2200 50  0001 C CNN
+F 3 "" H 9700 2200 50  0001 C CNN
+	1    9700 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:BUZZER-PTH LS2
+U 1 1 D8F01C85
+P 9700 1500
+F 0 "LS2" H 9600 1690 70  0000 L BNN
+F 1 "BUZZER-PTH" H 9910 1500 70  0000 L BNN
+F 2 "InterfaceBoard:BUZZER-12MM" H 9700 1500 50  0001 C CNN
+F 3 "" H 9700 1500 50  0001 C CNN
+	1    9700 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:GND #GND09
+U 1 1 928DF91D
+P 9600 1900
+F 0 "#GND09" H 9600 1900 50  0001 C CNN
+F 1 "GND" H 9600 1890 59  0000 C TNN
+F 2 "" H 9600 1900 50  0001 C CNN
+F 3 "" H 9600 1900 50  0001 C CNN
+	1    9600 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:GND #GND010
+U 1 1 845C69E3
+P 9600 1200
+F 0 "#GND010" H 9600 1200 50  0001 C CNN
+F 1 "GND" H 9600 1190 59  0000 C TNN
+F 2 "" H 9600 1200 50  0001 C CNN
+F 3 "" H 9600 1200 50  0001 C CNN
+	1    9600 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:LCD-15143 A2
+U 1 1 62A135ED
+P 6700 1800
+F 0 "A2" H 6700 1800 50  0001 C CNN
+F 1 "TFT" H 6700 1800 50  0001 C CNN
+F 2 "InterfaceBoard:LCD-15143" H 6700 1800 50  0001 C CNN
+F 3 "" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:3.3V #SUPPLY05
+U 1 1 FD320F9F
+P 5700 1500
+F 0 "#SUPPLY05" H 5700 1500 50  0001 C CNN
+F 1 "3.3V" H 5700 1610 59  0000 C BNN
+F 2 "" H 5700 1500 50  0001 C CNN
+F 3 "" H 5700 1500 50  0001 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:DGND #GND01
+U 1 1 DB8695AC
+P 5700 2100
+F 0 "#GND01" H 5700 2100 50  0001 C CNN
+F 1 "DGND" H 5700 2090 59  0000 C TNN
+F 2 "" H 5700 2100 50  0001 C CNN
+F 3 "" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:COM-15168 A3
+U 1 1 0CA1FE56
+P 4200 1500
+F 0 "A3" H 4200 1500 50  0001 C CNN
+F 1 "COM-15168" H 4200 1500 50  0001 C CNN
+F 2 "InterfaceBoard:COM-15168" H 4200 1500 50  0001 C CNN
+F 3 "" H 4200 1500 50  0001 C CNN
+	1    4200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:3.3V #SUPPLY06
+U 1 1 C21E2EB3
+P 4700 5200
+F 0 "#SUPPLY06" H 4700 5200 50  0001 C CNN
+F 1 "3.3V" H 4700 5310 59  0000 C BNN
+F 2 "" H 4700 5200 50  0001 C CNN
+F 3 "" H 4700 5200 50  0001 C CNN
+	1    4700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:DGND #GND02
+U 1 1 13A376EC
+P 3700 5400
+F 0 "#GND02" H 3700 5400 50  0001 C CNN
+F 1 "DGND" H 3700 5390 59  0000 C TNN
+F 2 "" H 3700 5400 50  0001 C CNN
+F 3 "" H 3700 5400 50  0001 C CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:CONN_11LOCK J1
+U 1 1 2CE6A523
+P 3000 4800
+F 0 "J1" H 3000 5420 70  0000 L BNN
+F 1 "CONN_11LOCK" H 3000 4110 70  0000 L BNN
+F 2 "InterfaceBoard:1X11_LOCK" H 3000 4800 50  0001 C CNN
+F 3 "" H 3000 4800 50  0001 C CNN
+	1    3000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L InterfaceBoard-eagle-import:CONN_07LOCK J2
+U 1 1 F2D55355
+P 2700 4700
+F 0 "J2" H 2500 5120 70  0000 L BNN
+F 1 "CONN_07LOCK" H 2500 4310 70  0000 L BNN
+F 2 "InterfaceBoard:1X07_LOCK" H 2700 4700 50  0001 C CNN
+F 3 "" H 2700 4700 50  0001 C CNN
+	1    2700 4700
+	-1   0    0    1   
+$EndComp
+Text Notes 7662 7554 0    100  ~ 0
+Andrew Gawlik
+Text Notes 10460 7710 0    100  ~ 0
+v1
+Text Notes 3700 2300 0    59   ~ 0
+Qwiic Cable used between\nthis device and\nmicrocontroller
+$EndSCHEMATC
