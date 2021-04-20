@@ -1,0 +1,339 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 11693 8846
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3300 4500 3000 4500
+Wire Wire Line
+	3000 4500 3000 4700
+Wire Wire Line
+	3000 4700 2600 4700
+Text Label 2600 4700 2    70   ~ 0
+BUTTON3
+Wire Wire Line
+	7600 5100 7500 5100
+Wire Wire Line
+	7500 5100 7500 5300
+Wire Wire Line
+	7500 5300 7400 5300
+Text Label 7400 5300 2    70   ~ 0
+BUTTON3
+Wire Wire Line
+	3300 4000 3000 4000
+Wire Wire Line
+	3000 4000 3000 3800
+Wire Wire Line
+	2800 3800 3000 3800
+Text Label 2800 3800 2    70   ~ 0
+BUTTON0
+Wire Wire Line
+	7600 4800 7400 4800
+Wire Wire Line
+	7400 4800 7400 4600
+Wire Wire Line
+	7400 4600 7200 4600
+Text Label 7200 4600 2    70   ~ 0
+BUTTON0
+Wire Wire Line
+	3300 4400 2700 4400
+Text Label 2700 4400 2    70   ~ 0
+BUTTON2
+Wire Wire Line
+	7600 5000 7400 5000
+Wire Wire Line
+	7400 5000 7400 5100
+Wire Wire Line
+	7400 5100 7300 5100
+Text Label 7300 5100 2    70   ~ 0
+BUTTON2
+Wire Wire Line
+	3300 4200 2800 4200
+Wire Wire Line
+	2800 4200 2800 4100
+Wire Wire Line
+	2800 4100 2700 4100
+Text Label 2700 4100 2    70   ~ 0
+BUTTON1
+Wire Wire Line
+	7600 4900 7300 4900
+Text Label 7300 4900 2    70   ~ 0
+BUTTON1
+Wire Wire Line
+	4600 4900 5500 4900
+Wire Wire Line
+	5500 4900 5500 5000
+Text Label 4600 4900 0    10   ~ 0
+GND
+Wire Wire Line
+	8900 5400 9100 5400
+Text Label 8900 5400 0    10   ~ 0
+GND
+Wire Wire Line
+	4600 3900 5300 3900
+Text Label 5300 3900 0    70   ~ 0
+AWAKE
+Wire Wire Line
+	7600 4700 7500 4700
+Wire Wire Line
+	7500 4700 7500 4400
+Wire Wire Line
+	7500 4400 7200 4400
+Text Label 7200 4400 2    70   ~ 0
+AWAKE
+Wire Wire Line
+	4600 5100 5200 5100
+Text Label 4600 5100 0    10   ~ 0
+3.3V
+Wire Wire Line
+	8900 5300 10400 5300
+Text Label 8900 5300 0    10   ~ 0
+3.3V
+Wire Wire Line
+	4600 4700 5300 4700
+Text Label 5300 4700 0    70   ~ 0
+LSPK
+Wire Wire Line
+	7600 4600 7600 4200
+Wire Wire Line
+	7600 4200 7200 4200
+Text Label 7200 4200 2    70   ~ 0
+LSPK
+Wire Wire Line
+	4600 3700 5300 3700
+Text Label 5300 3700 0    70   ~ 0
+PWM
+Wire Wire Line
+	8900 5200 9900 5200
+Text Label 9900 5200 0    70   ~ 0
+PWM
+Wire Wire Line
+	4600 3800 4800 3800
+Text Label 4800 3800 0    70   ~ 0
+TE
+Wire Wire Line
+	8900 4800 9500 4800
+Wire Wire Line
+	9500 4800 9500 4400
+Wire Wire Line
+	9500 4400 9900 4400
+Text Label 9900 4400 0    70   ~ 0
+TE
+Wire Wire Line
+	2900 4000 2100 4000
+Wire Wire Line
+	3300 4100 2900 4100
+Wire Wire Line
+	2900 4000 2900 4100
+Text Label 2100 4000 2    70   ~ 0
+DC
+Wire Wire Line
+	8900 4700 9400 4700
+Wire Wire Line
+	9400 4700 9400 4200
+Wire Wire Line
+	9400 4200 9900 4200
+Text Label 9900 4200 0    70   ~ 0
+DC
+Wire Wire Line
+	4600 4100 5300 4100
+Text Label 5300 4100 0    70   ~ 0
+CIPO
+Wire Wire Line
+	9600 4600 9900 4600
+Wire Wire Line
+	8900 4900 9600 4900
+Wire Wire Line
+	9600 4900 9600 4600
+Text Label 9900 4600 0    70   ~ 0
+CIPO
+Wire Wire Line
+	4600 4000 4800 4000
+Text Label 4800 4000 0    70   ~ 0
+COPI
+Wire Wire Line
+	8900 5000 9700 5000
+Wire Wire Line
+	9700 5000 9700 4800
+Wire Wire Line
+	9700 4800 9900 4800
+Text Label 9900 4800 0    70   ~ 0
+COPI
+Wire Wire Line
+	4600 4200 4800 4200
+Text Label 4800 4200 0    70   ~ 0
+SCLK
+Wire Wire Line
+	8900 5100 9800 5100
+Wire Wire Line
+	9800 5100 9800 5000
+Wire Wire Line
+	9800 5000 9900 5000
+Text Label 9900 5000 0    70   ~ 0
+SCLK
+Wire Wire Line
+	3300 3900 3100 3900
+Wire Wire Line
+	3100 3900 3100 3700
+Wire Wire Line
+	3100 3700 2200 3700
+Text Label 2200 3700 2    70   ~ 0
+LCDCS
+Wire Wire Line
+	8900 4600 9300 4600
+Wire Wire Line
+	9300 4600 9300 4000
+Wire Wire Line
+	9300 4000 9700 4000
+Text Label 9700 4000 0    70   ~ 0
+LCDCS
+Wire Wire Line
+	3300 4300 2100 4300
+Text Label 2100 4300 2    70   ~ 0
+SDCS
+Wire Wire Line
+	8900 4500 9200 4500
+Wire Wire Line
+	9200 4500 9200 3800
+Wire Wire Line
+	9200 3800 9700 3800
+Text Label 9700 3800 0    70   ~ 0
+SDCS
+Wire Wire Line
+	4600 4800 4900 4800
+Text Label 4900 4800 0    70   ~ 0
+RSPK
+Wire Wire Line
+	8900 4400 9100 4400
+Wire Wire Line
+	9100 4400 9100 3600
+Wire Wire Line
+	9100 3600 9700 3600
+Text Label 9700 3600 0    70   ~ 0
+RSPK
+Wire Wire Line
+	7600 5200 7600 5500
+Wire Wire Line
+	7600 5500 7500 5500
+Text Label 7500 5500 2    70   ~ 0
+BUTTON4
+Wire Wire Line
+	4600 4400 5300 4400
+Text Label 5300 4400 0    70   ~ 0
+BUTTON4
+$Comp
+L ControllerBoard-eagle-import:FRAME-LETTER FRAME1
+U 1 1 73DA64CA
+P 1100 8000
+F 0 "FRAME1" H 1100 8000 50  0001 C CNN
+F 1 "FRAME-LETTER" H 1100 8000 50  0001 C CNN
+F 2 "ControllerBoard:CREATIVE_COMMONS" H 1100 8000 50  0001 C CNN
+F 3 "" H 1100 8000 50  0001 C CNN
+	1    1100 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:FRAME-LETTER FRAME1
+U 2 1 73DA64C6
+P 6900 8000
+F 0 "FRAME1" H 6900 8000 50  0001 C CNN
+F 1 "FRAME-LETTER" H 6900 8000 50  0001 C CNN
+F 2 "ControllerBoard:CREATIVE_COMMONS" H 6900 8000 50  0001 C CNN
+F 3 "" H 6900 8000 50  0001 C CNN
+	2    6900 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:WRL-17381 A1
+U 1 1 B0BBFB80
+P 4000 4500
+F 0 "A1" H 4000 4500 50  0001 C CNN
+F 1 "ESP32_MICROCONTROLLER" H 4000 4500 50  0001 C CNN
+F 2 "ControllerBoard:WRL-17381" H 4000 4500 50  0001 C CNN
+F 3 "" H 4000 4500 50  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:3.3V #SUPPLY06
+U 1 1 C21E2EB3
+P 5200 5100
+F 0 "#SUPPLY06" H 5200 5100 50  0001 C CNN
+F 1 "3.3V" H 5200 5210 59  0000 C BNN
+F 2 "" H 5200 5100 50  0001 C CNN
+F 3 "" H 5200 5100 50  0001 C CNN
+	1    5200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:DGND #GND02
+U 1 1 13A376EC
+P 5500 5100
+F 0 "#GND02" H 5500 5100 50  0001 C CNN
+F 1 "DGND" H 5500 5090 59  0000 C TNN
+F 2 "" H 5500 5100 50  0001 C CNN
+F 3 "" H 5500 5100 50  0001 C CNN
+	1    5500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:3.3V #SUPPLY01
+U 1 1 E46721A6
+P 10400 5300
+F 0 "#SUPPLY01" H 10400 5300 50  0001 C CNN
+F 1 "3.3V" H 10400 5410 59  0000 C BNN
+F 2 "" H 10400 5300 50  0001 C CNN
+F 3 "" H 10400 5300 50  0001 C CNN
+	1    10400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:DGND #GND01
+U 1 1 DB8695AC
+P 9100 5500
+F 0 "#GND01" H 9100 5500 50  0001 C CNN
+F 1 "DGND" H 9100 5490 59  0000 C TNN
+F 2 "" H 9100 5500 50  0001 C CNN
+F 3 "" H 9100 5500 50  0001 C CNN
+	1    9100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:CONN_11LOCK J1
+U 1 1 2CE6A523
+P 8500 4900
+F 0 "J1" H 8500 5520 70  0000 L BNN
+F 1 "CONN_11LOCK" H 8500 4210 70  0000 L BNN
+F 2 "ControllerBoard:1X11_LOCK" H 8500 4900 50  0001 C CNN
+F 3 "" H 8500 4900 50  0001 C CNN
+	1    8500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ControllerBoard-eagle-import:CONN_07LOCK J2
+U 1 1 F2D55355
+P 7800 4800
+F 0 "J2" H 7600 5220 70  0000 L BNN
+F 1 "CONN_07LOCK" H 7600 4410 70  0000 L BNN
+F 2 "ControllerBoard:1X07_LOCK" H 7800 4800 50  0001 C CNN
+F 3 "" H 7800 4800 50  0001 C CNN
+	1    7800 4800
+	-1   0    0    1   
+$EndComp
+Text Notes 3400 5800 0    59   ~ 0
+Do not connect to pins\n23 and 24 as they share\npins with the Qwiic Cable
+Text Notes 7762 7554 0    100  ~ 0
+Andrew Gawlik
+Text Notes 10560 7710 0    100  ~ 0
+v1
+$EndSCHEMATC

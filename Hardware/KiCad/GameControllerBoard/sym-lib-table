@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ControllerBoard-eagle-import)(type Legacy)(uri ${KIPRJMOD}/ControllerBoard-eagle-import.lib)(options "")(descr ""))
+)
