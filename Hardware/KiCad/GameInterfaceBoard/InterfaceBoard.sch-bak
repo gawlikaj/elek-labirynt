@@ -363,17 +363,6 @@ F 3 "" H 8600 5800 50  0001 C CNN
 $EndComp
 $Comp
 L InterfaceBoard-eagle-import:FRAME-LETTER FRAME1
-U 1 1 73DA64CA
-P 1100 8000
-F 0 "FRAME1" H 1100 8000 50  0001 C CNN
-F 1 "FRAME-LETTER" H 1100 8000 50  0001 C CNN
-F 2 "InterfaceBoard:CREATIVE_COMMONS" H 1100 8000 50  0001 C CNN
-F 3 "" H 1100 8000 50  0001 C CNN
-	1    1100 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L InterfaceBoard-eagle-import:FRAME-LETTER FRAME1
 U 2 1 73DA64C6
 P 6900 8000
 F 0 "FRAME1" H 6900 8000 50  0001 C CNN
@@ -708,4 +697,15 @@ Text Notes 10460 7710 0    100  ~ 0
 v1
 Text Notes 3700 2300 0    59   ~ 0
 Qwiic Cable used between\nthis device and\nmicrocontroller
+$Comp
+L InterfaceBoard-eagle-import:FRAME-LETTER FRAME2
+U 1 1 608402A7
+P 1250 8150
+F 0 "FRAME2" H 1250 8150 50  0001 C CNN
+F 1 "FRAME-LETTER" H 1250 8150 50  0001 C CNN
+F 2 "InterfaceBoard:CREATIVE_COMMONS" H 1250 8150 50  0001 C CNN
+F 3 "" H 1250 8150 50  0001 C CNN
+	1    1250 8150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
