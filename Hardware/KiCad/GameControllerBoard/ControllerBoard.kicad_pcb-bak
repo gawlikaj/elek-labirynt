@@ -11,7 +11,7 @@
 
   (page USLetter)
   (title_block
-    (title "Game Controller Board - elek-labirynt")
+    (title "Game Controller Board")
     (date 2021-04-21)
     (rev 1)
     (company "Andrew Gawlik")
