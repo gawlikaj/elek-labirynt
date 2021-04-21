@@ -15,48 +15,32 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	5500 5600 5500 4700
-Text Label 5500 5600 0    70   ~ 0
-BUTTON3
 Wire Wire Line
 	2500 5000 2400 5000
 Wire Wire Line
 	2400 5000 2400 5200
 Wire Wire Line
 	2400 5200 2300 5200
-Text Label 2300 5200 2    70   ~ 0
-BUTTON3
 Wire Wire Line
 	7700 4600 7700 5600
-Text Label 7700 5600 0    70   ~ 0
-BUTTON0
 Wire Wire Line
 	2500 4700 2300 4700
 Wire Wire Line
 	2300 4700 2300 4500
 Wire Wire Line
 	2300 4500 2100 4500
-Text Label 2100 4500 2    70   ~ 0
-BUTTON0
 Wire Wire Line
 	6300 5600 6300 4700
-Text Label 6300 5600 0    70   ~ 0
-BUTTON2
 Wire Wire Line
 	2500 4900 2300 4900
 Wire Wire Line
 	2300 4900 2300 5000
 Wire Wire Line
 	2300 5000 2200 5000
-Text Label 2200 5000 2    70   ~ 0
-BUTTON2
 Wire Wire Line
 	7000 4500 7000 5600
-Text Label 7000 5600 0    70   ~ 0
-BUTTON1
 Wire Wire Line
 	2500 4800 2200 4800
-Text Label 2200 4800 2    70   ~ 0
-BUTTON1
 Wire Wire Line
 	8600 6200 8600 6000
 Text Label 8600 6200 0    10   ~ 0
@@ -109,8 +93,6 @@ Wire Wire Line
 	5700 1900 5700 2000
 Text Label 6000 1900 0    10   ~ 0
 GND
-Wire Wire Line
-	3400 5300 3700 5300
 Text Label 3400 5300 0    10   ~ 0
 GND
 Wire Wire Line
@@ -161,14 +143,10 @@ Text Label 3400 5200 0    10   ~ 0
 3.3V
 Wire Wire Line
 	8600 4600 8600 5600
-Text Label 8600 5500 0    70   ~ 0
-BUTTON4
 Wire Wire Line
 	2500 5100 2500 5400
 Wire Wire Line
 	2500 5400 2400 5400
-Text Label 2400 5400 2    70   ~ 0
-BUTTON4
 Wire Wire Line
 	10100 5600 10100 5500
 Wire Wire Line
@@ -186,28 +164,20 @@ Wire Wire Line
 	2400 4600 2400 4300
 Wire Wire Line
 	2400 4300 2100 4300
-Text Label 2100 4300 2    70   ~ 0
-AWAKE
 Wire Wire Line
 	10100 4100 10100 4000
 Wire Wire Line
 	9700 2100 10100 2100
-Text Label 10100 2100 0    70   ~ 0
-LSPK
 Wire Wire Line
 	2500 4500 2500 4100
 Wire Wire Line
 	2500 4100 2100 4100
-Text Label 2100 4100 2    70   ~ 0
-LSPK
 Wire Wire Line
 	6500 2500 6300 2500
 Text Label 6300 2500 2    70   ~ 0
 PWM
 Wire Wire Line
 	3400 5100 4200 5100
-Text Label 4200 5100 0    70   ~ 0
-PWM
 Wire Wire Line
 	6700 2500 6700 2600
 Wire Wire Line
@@ -220,92 +190,62 @@ Wire Wire Line
 	3900 4700 3900 4300
 Wire Wire Line
 	3900 4300 4400 4300
-Text Label 4400 4300 0    70   ~ 0
-TE
 Wire Wire Line
 	6900 2500 7500 2500
-Text Label 7500 2500 0    70   ~ 0
-DC
 Wire Wire Line
 	3400 4600 3800 4600
 Wire Wire Line
 	3800 4600 3800 4100
 Wire Wire Line
 	3800 4100 4400 4100
-Text Label 4400 4100 0    70   ~ 0
-DC
 Wire Wire Line
 	7500 2000 7800 2000
-Text Label 7800 2000 0    70   ~ 0
-CIPO
 Wire Wire Line
 	4000 4500 4400 4500
 Wire Wire Line
 	3400 4800 4000 4800
 Wire Wire Line
 	4000 4800 4000 4500
-Text Label 4400 4500 0    70   ~ 0
-CIPO
 Wire Wire Line
 	7500 1800 7800 1800
-Text Label 7800 1800 0    70   ~ 0
-COPI
 Wire Wire Line
 	3400 4900 4100 4900
 Wire Wire Line
 	4100 4900 4100 4700
 Wire Wire Line
 	4100 4700 4400 4700
-Text Label 4400 4700 0    70   ~ 0
-COPI
 Wire Wire Line
 	7500 1600 7800 1600
-Text Label 7800 1600 0    70   ~ 0
-SCLK
 Wire Wire Line
 	3400 5000 4200 5000
 Wire Wire Line
 	4200 5000 4200 4900
 Wire Wire Line
 	4200 4900 4400 4900
-Text Label 4400 4900 0    70   ~ 0
-SCLK
 Wire Wire Line
 	6800 1200 7500 1200
-Text Label 7500 1200 0    70   ~ 0
-LCDCS
 Wire Wire Line
 	3400 4500 3700 4500
 Wire Wire Line
 	3700 4500 3700 3900
 Wire Wire Line
 	3700 3900 4300 3900
-Text Label 4300 3900 0    70   ~ 0
-LCDCS
 Wire Wire Line
 	6600 1200 6200 1200
-Text Label 6200 1200 2    70   ~ 0
-SDCS
 Wire Wire Line
 	3400 4400 3600 4400
 Wire Wire Line
 	3600 4400 3600 3700
 Wire Wire Line
 	3600 3700 4300 3700
-Text Label 4300 3700 0    70   ~ 0
-SDCS
 Wire Wire Line
 	9700 1400 10100 1400
-Text Label 10100 1400 0    70   ~ 0
-RSPK
 Wire Wire Line
 	3400 4300 3500 4300
 Wire Wire Line
 	3500 4300 3500 3600
 Wire Wire Line
 	3500 3600 4100 3600
-Text Label 4100 3600 0    70   ~ 0
-RSPK
 $Comp
 L InterfaceBoard-eagle-import:R-US_0204_5 R2
 U 1 1 81BCC900
@@ -659,17 +599,6 @@ F 3 "" H 4700 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L InterfaceBoard-eagle-import:DGND #GND02
-U 1 1 13A376EC
-P 3700 5400
-F 0 "#GND02" H 3700 5400 50  0001 C CNN
-F 1 "DGND" H 3700 5390 59  0000 C TNN
-F 2 "" H 3700 5400 50  0001 C CNN
-F 3 "" H 3700 5400 50  0001 C CNN
-	1    3700 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L InterfaceBoard-eagle-import:CONN_11LOCK J1
 U 1 1 2CE6A523
 P 3000 4800
@@ -694,7 +623,7 @@ $EndComp
 Text Notes 7662 7554 0    100  ~ 0
 Andrew Gawlik
 Text Notes 10460 7710 0    100  ~ 0
-v1
+v2
 Text Notes 3700 2300 0    59   ~ 0
 Qwiic Cable used between\nthis device and\nmicrocontroller
 $Bitmap
@@ -3242,12 +3171,12 @@ $EndBitmap
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 60808813
-P 2750 7500
-F 0 "H4" H 2850 7546 50  0000 L CNN
-F 1 "MountingHole" H 2850 7455 50  0000 L CNN
-F 2 "MountingHole_3mm" H 2750 7500 50  0001 C CNN
-F 3 "~" H 2750 7500 50  0001 C CNN
-	1    2750 7500
+P 1800 8300
+F 0 "H4" H 1900 8346 50  0000 L CNN
+F 1 "MountingHole" H 1900 8255 50  0000 L CNN
+F 2 "MountingHole_3mm" H 1800 8300 50  0001 C CNN
+F 3 "~" H 1800 8300 50  0001 C CNN
+	1    1800 8300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3262,28 +3191,6 @@ F 3 "~" H 1800 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H7
-U 1 1 6081064F
-P 3550 7500
-F 0 "H7" H 3650 7546 50  0000 L CNN
-F 1 "MountingHole" H 3650 7455 50  0000 L CNN
-F 2 "MountingHole_3mm" H 3550 7500 50  0001 C CNN
-F 3 "~" H 3550 7500 50  0001 C CNN
-	1    3550 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H8
-U 1 1 60810B66
-P 3550 7750
-F 0 "H8" H 3650 7796 50  0000 L CNN
-F 1 "MountingHole" H 3650 7705 50  0000 L CNN
-F 2 "MountingHole_3mm" H 3550 7750 50  0001 C CNN
-F 3 "~" H 3550 7750 50  0001 C CNN
-	1    3550 7750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H3
 U 1 1 608113E1
 P 1850 8050
@@ -3292,39 +3199,6 @@ F 1 "MountingHole" H 1950 8005 50  0000 L CNN
 F 2 "MountingHole_3mm" H 1850 8050 50  0001 C CNN
 F 3 "~" H 1850 8050 50  0001 C CNN
 	1    1850 8050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H6
-U 1 1 60811785
-P 2700 8050
-F 0 "H6" H 2800 8096 50  0000 L CNN
-F 1 "MountingHole" H 2800 8005 50  0000 L CNN
-F 2 "MountingHole_3mm" H 2700 8050 50  0001 C CNN
-F 3 "~" H 2700 8050 50  0001 C CNN
-	1    2700 8050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H10
-U 1 1 60811E6B
-P 4600 7500
-F 0 "H10" H 4700 7546 50  0000 L CNN
-F 1 "MountingHole" H 4700 7455 50  0000 L CNN
-F 2 "MountingHole_3mm" H 4600 7500 50  0001 C CNN
-F 3 "~" H 4600 7500 50  0001 C CNN
-	1    4600 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H12
-U 1 1 6081248E
-P 4550 8000
-F 0 "H12" H 4650 8046 50  0000 L CNN
-F 1 "MountingHole" H 4650 7955 50  0000 L CNN
-F 2 "MountingHole_3mm" H 4550 8000 50  0001 C CNN
-F 3 "~" H 4550 8000 50  0001 C CNN
-	1    4550 8000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3338,37 +3212,91 @@ F 3 "~" H 1800 7750 50  0001 C CNN
 	1    1800 7750
 	1    0    0    -1  
 $EndComp
+Text GLabel 2100 4100 0    70   Input ~ 0
+LSPK
+Text GLabel 2100 4300 0    70   Input ~ 0
+AWAKE
+Text GLabel 2100 4500 0    70   Input ~ 0
+BUTTON0
+Text GLabel 2200 4800 0    70   Input ~ 0
+BUTTON1
+Text GLabel 2200 5000 0    70   Input ~ 0
+BUTTON2
+Text GLabel 2300 5200 0    70   Input ~ 0
+BUTTON3
+Text GLabel 2400 5400 0    70   Input ~ 0
+BUTTON4
+Text GLabel 4100 3600 2    70   Input ~ 0
+RSPK
+Text GLabel 4300 3700 2    70   Input ~ 0
+SDCS
+Text GLabel 4300 3900 2    70   Input ~ 0
+LCDCS
+Text GLabel 4400 4100 2    70   Input ~ 0
+DC
+Text GLabel 4400 4300 2    70   Input ~ 0
+TE
+Text GLabel 4400 4500 2    70   Input ~ 0
+CIPO
+Text GLabel 4400 4700 2    70   Input ~ 0
+COPI
+Text GLabel 4400 4900 2    70   Input ~ 0
+SCLK
+Text GLabel 4200 5100 2    70   Input ~ 0
+PWM
 $Comp
-L Mechanical:MountingHole H5
-U 1 1 60813FB8
-P 2700 7750
-F 0 "H5" H 2800 7796 50  0000 L CNN
-F 1 "MountingHole" H 2800 7705 50  0000 L CNN
-F 2 "MountingHole_3mm" H 2700 7750 50  0001 C CNN
-F 3 "~" H 2700 7750 50  0001 C CNN
-	1    2700 7750
+L InterfaceBoard-eagle-import:DGND #GND02
+U 1 1 13A376EC
+P 3950 5400
+F 0 "#GND02" H 3950 5400 50  0001 C CNN
+F 1 "DGND" H 3950 5390 59  0000 C TNN
+F 2 "" H 3950 5400 50  0001 C CNN
+F 3 "" H 3950 5400 50  0001 C CNN
+	1    3950 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H9
-U 1 1 60814652
-P 3550 8050
-F 0 "H9" H 3650 8096 50  0000 L CNN
-F 1 "MountingHole" H 3650 8005 50  0000 L CNN
-F 2 "MountingHole_3mm" H 3550 8050 50  0001 C CNN
-F 3 "~" H 3550 8050 50  0001 C CNN
-	1    3550 8050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H11
-U 1 1 60814DD4
-P 4550 7800
-F 0 "H11" H 4650 7846 50  0000 L CNN
-F 1 "MountingHole" H 4650 7755 50  0000 L CNN
-F 2 "MountingHole_3mm" H 4550 7800 50  0001 C CNN
-F 3 "~" H 4550 7800 50  0001 C CNN
-	1    4550 7800
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	3400 5300 3950 5300
+Text GLabel 5500 5600 0    70   Input ~ 0
+BUTTON3
+Text GLabel 6300 5600 0    70   Input ~ 0
+BUTTON2
+Text GLabel 7000 5600 0    70   Input ~ 0
+BUTTON1
+Text GLabel 7700 5600 0    70   Input ~ 0
+BUTTON0
+Text GLabel 8600 5500 0    70   Input ~ 0
+BUTTON4
+Text GLabel 7800 1600 2    70   Input ~ 0
+SCLK
+Text GLabel 7800 1800 2    70   Input ~ 0
+COPI
+Text GLabel 7800 2000 2    70   Input ~ 0
+CIPO
+Text GLabel 7500 2500 2    70   Input ~ 0
+DC
+Text GLabel 10100 1400 2    70   Input ~ 0
+RSPK
+Text GLabel 10100 2100 2    70   Input ~ 0
+LSPK
+Text GLabel 7500 1200 2    70   Input ~ 0
+LCDCS
+Text GLabel 6200 1200 0    70   Input ~ 0
+SDCS
+Text Notes 2850 3600 0    50   ~ 0
+Headers
+Text Notes 6450 3050 0    50   ~ 0
+Left Buttons
+Text Notes 8450 3000 0    50   ~ 0
+Middle Button
+Text Notes 9850 2900 0    50   ~ 0
+Awake/Sleep Switch
+Text Notes 9450 900  0    50   ~ 0
+Speakers
+Text Notes 6400 850  0    50   ~ 0
+LCD and SD Card Interface
+Text Notes 4050 850  0    50   ~ 0
+Joystick
+Text Notes 1300 7200 0    50   ~ 0
+Mounting Holes to Stack with Controller Board
 $EndSCHEMATC
