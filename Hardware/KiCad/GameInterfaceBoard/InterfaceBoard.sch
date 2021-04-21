@@ -697,17 +697,6 @@ Text Notes 10460 7710 0    100  ~ 0
 v1
 Text Notes 3700 2300 0    59   ~ 0
 Qwiic Cable used between\nthis device and\nmicrocontroller
-$Comp
-L InterfaceBoard-eagle-import:FRAME-LETTER FRAME2
-U 1 1 608402A7
-P 1250 8150
-F 0 "FRAME2" H 1250 8150 50  0001 C CNN
-F 1 "FRAME-LETTER" H 1250 8150 50  0001 C CNN
-F 2 "InterfaceBoard:CREATIVE_COMMONS" H 1250 8150 50  0001 C CNN
-F 3 "" H 1250 8150 50  0001 C CNN
-	1    1250 8150
-	1    0    0    -1  
-$EndComp
 $Bitmap
 Pos 10450 6850
 Scale 0.100000
@@ -3250,4 +3239,136 @@ F7 1F 57 B5 B4 31 66 F2 BA B6 CE 20 1D 7C 53 AD 7A 6B CB DE 18 D3 18 13 89 AF 00
 BD C0 75 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60808813
+P 2750 7500
+F 0 "H4" H 2850 7546 50  0000 L CNN
+F 1 "MountingHole" H 2850 7455 50  0000 L CNN
+F 2 "MountingHole_3mm" H 2750 7500 50  0001 C CNN
+F 3 "~" H 2750 7500 50  0001 C CNN
+	1    2750 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6080D86C
+P 1800 7450
+F 0 "H1" H 1900 7496 50  0000 L CNN
+F 1 "MountingHole" H 1900 7405 50  0000 L CNN
+F 2 "MountingHole_3mm" H 1800 7450 50  0001 C CNN
+F 3 "~" H 1800 7450 50  0001 C CNN
+	1    1800 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 6081064F
+P 3550 7500
+F 0 "H7" H 3650 7546 50  0000 L CNN
+F 1 "MountingHole" H 3650 7455 50  0000 L CNN
+F 2 "MountingHole_3mm" H 3550 7500 50  0001 C CNN
+F 3 "~" H 3550 7500 50  0001 C CNN
+	1    3550 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 60810B66
+P 3550 7750
+F 0 "H8" H 3650 7796 50  0000 L CNN
+F 1 "MountingHole" H 3650 7705 50  0000 L CNN
+F 2 "MountingHole_3mm" H 3550 7750 50  0001 C CNN
+F 3 "~" H 3550 7750 50  0001 C CNN
+	1    3550 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 608113E1
+P 1850 8050
+F 0 "H3" H 1950 8096 50  0000 L CNN
+F 1 "MountingHole" H 1950 8005 50  0000 L CNN
+F 2 "MountingHole_3mm" H 1850 8050 50  0001 C CNN
+F 3 "~" H 1850 8050 50  0001 C CNN
+	1    1850 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 60811785
+P 2700 8050
+F 0 "H6" H 2800 8096 50  0000 L CNN
+F 1 "MountingHole" H 2800 8005 50  0000 L CNN
+F 2 "MountingHole_3mm" H 2700 8050 50  0001 C CNN
+F 3 "~" H 2700 8050 50  0001 C CNN
+	1    2700 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 60811E6B
+P 4600 7500
+F 0 "H10" H 4700 7546 50  0000 L CNN
+F 1 "MountingHole" H 4700 7455 50  0000 L CNN
+F 2 "MountingHole_3mm" H 4600 7500 50  0001 C CNN
+F 3 "~" H 4600 7500 50  0001 C CNN
+	1    4600 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 6081248E
+P 4550 8000
+F 0 "H12" H 4650 8046 50  0000 L CNN
+F 1 "MountingHole" H 4650 7955 50  0000 L CNN
+F 2 "MountingHole_3mm" H 4550 8000 50  0001 C CNN
+F 3 "~" H 4550 8000 50  0001 C CNN
+	1    4550 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60812A9E
+P 1800 7750
+F 0 "H2" H 1900 7796 50  0000 L CNN
+F 1 "MountingHole" H 1900 7705 50  0000 L CNN
+F 2 "MountingHole_3mm" H 1800 7750 50  0001 C CNN
+F 3 "~" H 1800 7750 50  0001 C CNN
+	1    1800 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60813FB8
+P 2700 7750
+F 0 "H5" H 2800 7796 50  0000 L CNN
+F 1 "MountingHole" H 2800 7705 50  0000 L CNN
+F 2 "MountingHole_3mm" H 2700 7750 50  0001 C CNN
+F 3 "~" H 2700 7750 50  0001 C CNN
+	1    2700 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 60814652
+P 3550 8050
+F 0 "H9" H 3650 8096 50  0000 L CNN
+F 1 "MountingHole" H 3650 8005 50  0000 L CNN
+F 2 "MountingHole_3mm" H 3550 8050 50  0001 C CNN
+F 3 "~" H 3550 8050 50  0001 C CNN
+	1    3550 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 60814DD4
+P 4550 7800
+F 0 "H11" H 4650 7846 50  0000 L CNN
+F 1 "MountingHole" H 4650 7755 50  0000 L CNN
+F 2 "MountingHole_3mm" H 4550 7800 50  0001 C CNN
+F 3 "~" H 4550 7800 50  0001 C CNN
+	1    4550 7800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
