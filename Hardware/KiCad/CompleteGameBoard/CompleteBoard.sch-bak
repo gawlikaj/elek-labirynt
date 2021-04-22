@@ -645,48 +645,4 @@ Wire Wire Line
 	8700 4700 8700 5700
 Wire Wire Line
 	8700 6100 8700 6300
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 6086185F
-P 1450 7700
-F 0 "H1" H 1550 7746 50  0000 L CNN
-F 1 "MountingHole" H 1550 7655 50  0000 L CNN
-F 2 "MountingHole_3mm" H 1450 7700 50  0001 C CNN
-F 3 "~" H 1450 7700 50  0001 C CNN
-	1    1450 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 6086E033
-P 1450 7900
-F 0 "H2" H 1550 7946 50  0000 L CNN
-F 1 "MountingHole" H 1550 7855 50  0000 L CNN
-F 2 "MountingHole_3mm" H 1450 7900 50  0001 C CNN
-F 3 "~" H 1450 7900 50  0001 C CNN
-	1    1450 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 6087037E
-P 1450 8100
-F 0 "H3" H 1550 8146 50  0000 L CNN
-F 1 "MountingHole" H 1550 8055 50  0000 L CNN
-F 2 "MountingHole_3mm" H 1450 8100 50  0001 C CNN
-F 3 "~" H 1450 8100 50  0001 C CNN
-	1    1450 8100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 608725EA
-P 1450 8300
-F 0 "H4" H 1550 8346 50  0000 L CNN
-F 1 "MountingHole" H 1550 8255 50  0000 L CNN
-F 2 "MountingHole_3mm" H 1450 8300 50  0001 C CNN
-F 3 "~" H 1450 8300 50  0001 C CNN
-	1    1450 8300
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
