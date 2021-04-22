@@ -1,16 +1,16 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 11693 8846
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Game Interface Board - elek-labirynt"
+Date "2021-04-20"
+Rev "2"
+Comp "Andrew Gawlik"
+Comment1 "designed by:"
+Comment2 "https://creativecommons.org/licenses/by-sa/4.0/"
+Comment3 "Released under the Creative Commons Attribution Share-Alike 4.0 License"
 Comment4 ""
 $EndDescr
 Wire Wire Line
@@ -304,12 +304,12 @@ $EndComp
 $Comp
 L InterfaceBoard-eagle-import:FRAME-LETTER FRAME1
 U 2 1 73DA64C6
-P 6900 8000
-F 0 "FRAME1" H 6900 8000 50  0001 C CNN
-F 1 "FRAME-LETTER" H 6900 8000 50  0001 C CNN
-F 2 "InterfaceBoard:CREATIVE_COMMONS" H 6900 8000 50  0001 C CNN
-F 3 "" H 6900 8000 50  0001 C CNN
-	2    6900 8000
+P 6750 8000
+F 0 "FRAME1" H 6750 8000 50  0001 C CNN
+F 1 "FRAME-LETTER" H 6750 8000 50  0001 C CNN
+F 2 "InterfaceBoard:CREATIVE_COMMONS" H 6750 8000 50  0001 C CNN
+F 3 "" H 6750 8000 50  0001 C CNN
+	2    6750 8000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -620,14 +620,14 @@ F 3 "" H 2700 4700 50  0001 C CNN
 	1    2700 4700
 	-1   0    0    1   
 $EndComp
-Text Notes 7662 7554 0    100  ~ 0
+Text Notes 7512 7554 0    100  ~ 0
 Andrew Gawlik
-Text Notes 10460 7710 0    100  ~ 0
+Text Notes 10310 7710 0    100  ~ 0
 v2
 Text Notes 3700 2300 0    59   ~ 0
 Qwiic Cable used between\nthis device and\nmicrocontroller
 $Bitmap
-Pos 10450 6850
+Pos 10300 6850
 Scale 0.100000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 B0 00 00 04 EF 08 06 00 00 00 16 F9 09 
