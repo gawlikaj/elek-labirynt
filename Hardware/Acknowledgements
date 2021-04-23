@@ -1,0 +1,14 @@
+While the following entities and people have not directly contributed to this project, 
+I do want to provide acknowledgements and citations of the work I used to derive my designs.
+(in particular the Eagle CAD files and the Cad Files freely available online)
+
+## SparkFun (http://www.sparkfun.com)
+* COM-15168 Eagle Files - https://cdn.sparkfun.com/assets/d/e/3/2/9/Qwiic_Joystick.zip
+* LCD-15143 Eagle Files - https://cdn.sparkfun.com/assets/d/5/a/6/9/LCD_TFT_Breakout_1in8_128x160.zip
+* WRL-17381 Eagle Files - https://cdn.sparkfun.com/assets/d/c/8/c/c/ESP32_Thing_Plus_UFL.zip
+* Thumb Joystick Step File - https://cdn.sparkfun.com/3D_Models/products/9032/step.zip
+
+## GrabCad Community (http://www.grabcad.com)
+* Michael Gräf (https://grabcad.com/michael.graf-16)
+** https://grabcad.com/library/pin-header-male-2-54mm-different-pin-numbers-1
+** https://grabcad.com/library/pin-header-female-2-54mm-different-pin-numbers-1
