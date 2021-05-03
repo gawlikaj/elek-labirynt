@@ -7,10 +7,10 @@
 #include "driver/gpio.h"
 
 
-#define UART_DEBUG_TXD  (GPIO_NUM_4)
-#define UART_DEBUG_RXD  (GPIO_NUM_5)
-#define UART_DEBUG_RTS  (UART_PIN_NO_CHANGE)
-#define UART_DEBUG_CTS  (UART_PIN_NO_CHANGE)
+#define UART_DEBUG_TXD  (GPIO_NUM_1)
+#define UART_DEBUG_RXD  (GPIO_NUM_3)
+#define UART_DEBUG_RTS  (GPIO_NUM_2)
+#define UART_DEBUG_CTS  (GPIO_NUM_35)
 
 #define BUF_SIZE (1024)
 
