@@ -20,7 +20,7 @@
 
 /**
  * @file UART_debugger.c
- * @brief UART Debugger Driver
+ * @brief UART Debugger Driver (source)
  *
  * This file contains the source code for the UART debugger driver
  *
@@ -47,7 +47,7 @@
 /*
     initialize the UART for the debugger
  */
-void init_debug(void)
+void debug_init(void)
 {
   /* Configure parameters of an UART driver,
      * communication pins and install the driver */

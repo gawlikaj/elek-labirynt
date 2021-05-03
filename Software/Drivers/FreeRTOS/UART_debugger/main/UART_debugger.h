@@ -20,7 +20,7 @@
 
 /**
  * @file UART_debugger.h
- * @brief UART Debugger Driver
+ * @brief UART Debugger Driver (header)
  *
  * This file contains the header information for the UART debugger driver
  *
@@ -37,7 +37,7 @@
  * @return none
  *
  */
-void init_debug(void);
+void debug_init(void);
 
 /**
  * @brief Send output data to the UART debugger from the microcontroller

@@ -8,7 +8,7 @@
 
 static void debug_task(void *arg)
 {
-  init_debug();  //initialize the debugger
+  debug_init();  //initialize the debugger
   while(1)
   {
     debug_out("Hello World\r\n",13);  //output Hello World a carriage return and a new line to the debugger
