@@ -1,6 +1,33 @@
-/* UART debugger driver
+/******************************************************************************
+ * Copyright (C) 2021 by Andrew Gawlik
+ *
+ *     This file is part of elek-labirynt.
+ *
+ *   elek-labirynt is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   elek-labirynt is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with elek-labirynt.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ *****************************************************************************/
 
-*/
+/**
+ * @file UART_debugger.c
+ * @brief UART Debugger Driver
+ *
+ * This file contains the source code for the UART debugger driver
+ *
+ * @author Andrew Gawlik
+ * @date May 3 2021
+ *
+ */
 
 #include "UART_debugger.h"
 #include "driver/uart.h"
@@ -16,6 +43,10 @@
 
 #define UART_DEBUG_PORT UART_NUM_0  //UART0 being used for the debug port since it is connected directly to the USB port
 
+
+/*
+    initialize the UART for the debugger
+ */
 void init_debug(void)
 {
   /* Configure parameters of an UART driver,
@@ -57,6 +88,10 @@ void init_debug(void)
     uart_set_pin(UART_DEBUG_PORT, UART_DEBUG_TXD, UART_DEBUG_RXD, UART_DEBUG_RTS, UART_DEBUG_CTS);
 }
 
+
+/*
+    output a string via the UART debugger
+ */
 void debug_out(char* data, size_t len)
 {
   uart_write_bytes(UART_DEBUG_PORT, (const char *) data, len); //write a string (data) of length len to the UART for debugging
