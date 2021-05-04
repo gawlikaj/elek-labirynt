@@ -22,7 +22,7 @@
  * @file UART_debugger.h
  * @brief UART Debugger Driver (header)
  *
- * This file contains the header information for the UART debugger driver
+ * @details This file contains the header information for the UART debugger driver
  *
  * @author Andrew Gawlik
  * @date May 3 2021

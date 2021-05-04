@@ -22,7 +22,7 @@
  * @file UART_debugger.c
  * @brief UART Debugger Driver (source)
  *
- * This file contains the source code for the UART debugger driver
+ * @details This file contains the source code for the UART debugger driver
  *
  * @author Andrew Gawlik
  * @date May 3 2021
