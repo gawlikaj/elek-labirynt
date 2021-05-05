@@ -19,7 +19,7 @@
  *****************************************************************************/
 
 /**
- * @file UART_debugger.c
+ * @file debugger.c
  * @brief UART Debugger Driver (source)
  *
  * @details This file contains the source code for the UART debugger driver
@@ -29,7 +29,7 @@
  *
  */
 
-#include "UART_debugger.h"
+#include "UART/Debugger.h"
 #include "driver/uart.h"
 #include "driver/gpio.h"
 
@@ -74,9 +74,9 @@ void debug_init(void)
     uart_driver_install(UART_DEBUG_PORT, BUF_SIZE * 2, 0, 0, NULL, 0);
     
     /*
-       configure UART parameters being set for the UART_DEBUG_PORT
+       configure UART parameters being set for the UART_DEBUG_PORT and check for errors using ESP_ERROR_CHECK
      */
-    uart_param_config(UART_DEBUG_PORT, &uart_config);
+    ESP_ERROR_CHECK(uart_param_config(UART_DEBUG_PORT, &uart_config));
     
     /*
        set the pins for the UART_DEBUG_PORT

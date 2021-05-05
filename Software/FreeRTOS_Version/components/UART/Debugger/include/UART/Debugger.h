@@ -19,7 +19,7 @@
  *****************************************************************************/
 
 /**
- * @file UART_debugger.h
+ * @file debugger.h
  * @brief UART Debugger Driver (header)
  *
  * @details This file contains the header information for the UART debugger driver

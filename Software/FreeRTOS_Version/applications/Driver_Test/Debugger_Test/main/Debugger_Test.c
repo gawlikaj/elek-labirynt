@@ -19,7 +19,7 @@
  *****************************************************************************/
 
  /**
-  * @file UART_debugger_main.c
+  * @file Debugger_Test.c
   * @brief Main source file for testing the UART debugger
   *
   * @details This file contains the source code for the UART debugger driver test application
@@ -31,7 +31,7 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "UART_debugger.h"
+#include "UART/Debugger.h"
 
 /**
  * @brief Creates the task used for the UART debugger

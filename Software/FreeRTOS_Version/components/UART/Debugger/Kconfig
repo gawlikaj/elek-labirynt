@@ -1,0 +1,9 @@
+menu "UART Debugger library"
+
+    config UART_ENABLE_DEBUGGER
+        bool "Print Debugging Output to UART"
+        default n
+        help
+            If set, the microcontroller will send Debugging data via the UART
+
+endmenu # "UART Debugger library"
