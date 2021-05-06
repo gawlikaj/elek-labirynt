@@ -32,6 +32,8 @@
 #include "UART/Debugger.h"
 #include "driver/uart.h"
 #include "driver/gpio.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/message_buffer.h"
 
 
 #define UART_DEBUG_TXD  (GPIO_NUM_1)
@@ -39,15 +41,19 @@
 #define UART_DEBUG_RTS  (GPIO_NUM_2)
 #define UART_DEBUG_CTS  (GPIO_NUM_35)
 
-#define BUF_SIZE (1024)
+#define DEBUG_MAX_HANDLES 16  //no more than 16 debug handles allowed
+#define BUF_SIZE (128)
 
 #define UART_DEBUG_PORT UART_NUM_0  //UART0 being used for the debug port since it is connected directly to the USB port
+
+uint8_t countDebugHandles;
+MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 
 
 /*
     initialize the UART for the debugger
  */
-void debug_init(void)
+void debug_init()
 {
   /* Configure parameters of an UART driver,
      * communication pins and install the driver */
@@ -86,13 +92,69 @@ void debug_init(void)
        CTS pin
      */
     uart_set_pin(UART_DEBUG_PORT, UART_DEBUG_TXD, UART_DEBUG_RXD, UART_DEBUG_RTS, UART_DEBUG_CTS);
+    
+    countDebugHandles = 0;
 }
 
+/*
+  the task used for the debugger
+ */
+void debug_task()
+{
+  int debuggerHandleIndex;
+  char buffer[BUF_SIZE];
+  const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );
+  
+  while(1)
+  {
+    for(debuggerHandleIndex = 0; debuggerHandleIndex < countDebugHandles; debuggerHandleIndex++)
+   {
+     xMessageBufferReceive(arrDebugHandles[debuggerHandleIndex],buffer,BUF_SIZE,xBlockTime);
+     uart_write_bytes(UART_DEBUG_PORT,(const char*)buffer,BUF_SIZE);
+   }
+  }
+}
+
+/*
+  generates a debug message handle
+*/
+uint8_t debug_add_handle()
+{
+  MessageBufferHandle_t handle;
+  uint8_t result;  //assigned index
+  
+  if(countDebugHandles < DEBUG_MAX_HANDLES)  //ensure that we are within the limits of the debug handles
+  {
+    handle = xMessageBufferCreate(BUF_SIZE);  //may still result in null if the heap cannot allocate it, but attempt to allocate in countDebugHandles
+  }
+  else  //more than allowed message buffers to be created
+  {
+    handle = NULL;
+  }
+  
+  if(handle != NULL)
+  {
+    result = countDebugHandles;
+    arrDebugHandles[result] = handle; //assign message buffer to array
+    countDebugHandles++;                         //increment the count of debug handles
+  }
+  else
+  {
+    result = DEBUG_MAX_HANDLES;
+  }
+  
+  return result;
+}
 
 /*
     output a string via the UART debugger
  */
-void debug_out(char* data, size_t len)
+void debug_out(uint8_t handleIndex, char* data, size_t len)
 {
-  uart_write_bytes(UART_DEBUG_PORT, (const char *) data, len); //write a string (data) of length len to the UART for debugging
+  const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );    
+  
+  if(handleIndex < countDebugHandles)
+  {
+    xMessageBufferSend(arrDebugHandles[handleIndex], (void *) data, len, xBlockTime); //write a string (data) of length len to the UART for debugging
+  }
 }

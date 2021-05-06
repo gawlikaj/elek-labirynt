@@ -28,7 +28,7 @@
  * @date May 3 2021
  *
  */
-
+#include <stdint.h>
 #include <stddef.h>
 
 /**
@@ -37,13 +37,30 @@
  * @return none
  *
  */
-void debug_init(void);
+void debug_init();
 
 /**
- * @brief Send output data to the UART debugger from the microcontroller
+ * @brief runs the debugger task 
+ * @details outputs the debugging information from the debugging handles to the UART from the microcontroller
+ * @return none
  *
+ */ 
+void debug_task();
+
+/**
+ * @brief generates a new debug handle
+ * @details generates a new debug handle dedicated to the calling process
+ * @return none
+ *
+ */
+uint8_t debug_add_handle();
+
+/**
+ * @brief Send message to the debugger
+ *
+ * @param[in] handleIndex a number identifying the debugger message handle assigned for the process
  * @param[in] data a character string of data to output from the microcontroller via the UART
  * @param[in] number of characters in the character string to output from the microcontroller via the UART
  * @return none
  */
-void debug_out(char* data, size_t len);
+void debug_out(uint8_t handleIndex, char* data, size_t len);

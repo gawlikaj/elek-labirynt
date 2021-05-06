@@ -1116,7 +1116,7 @@ CONFIG_WPA_MBEDTLS_CRYPTO=y
 #
 # UART Debugger library
 #
-CONFIG_UART_ENABLE_DEBUGGER=y
+# CONFIG_UART_ENABLE_DEBUGGER is not set
 # end of UART Debugger library
 # end of Component config
 

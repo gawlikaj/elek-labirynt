@@ -31,22 +31,21 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/timers.h"
 #include "UART/Debugger.h"
 
+static uint8_t debugHandle;
+
 /**
- * @brief Creates the task used for the UART debugger
- * @details Creates the FreeRTOS task used for the UART debugger
- * @param arg - task arguments currently not used
+ * @brief Timer callback for testing the UART debugger
+ * @details outputs "Hello World" to the debugger
+ * @param pxTimer the timer handle
  * @return none
  *
  */
-static void debug_task(void *arg)
+void vTimerCallback( TimerHandle_t pxTimer )
 {
-  debug_init();  //initialize the debugger
-  while(1)
-  {
-    debug_out("Hello World\r\n",13);  //output Hello World a carriage return and a new line to the debugger
-  }
+  debug_out(debugHandle,"Hello World\r\n",13);  //output Hello World a carriage return and a new line to the debugger
 }
 
 /**
@@ -55,7 +54,17 @@ static void debug_task(void *arg)
  * @return none
  *
  */
-void app_main(void)
+void app_main()
 {  
+  TimerHandle_t debugTimerHandle; //handle for a debug timer
+  
+  debug_init();  //initialize the debugger
+  debugHandle = debug_add_handle();
+  
+  debugTimerHandle = xTimerCreate("DebugTimer",1000,pdTRUE,NULL,vTimerCallback);
+  
+  
   xTaskCreate(debug_task, "uart_debugger_task", 1024, NULL, 10, NULL); //use debug_task as the function with a name "uart_debugger_task", a stack size of 1024, no parameters, a priority of 10, and no handle
+  
+  xTimerStart(debugTimerHandle,0);
 }
