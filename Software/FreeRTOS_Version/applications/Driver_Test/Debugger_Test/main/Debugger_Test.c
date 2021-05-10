@@ -36,6 +36,9 @@
 
 static uint8_t debugHandle;
 
+static char testOutput[19];
+static uint8_t loopCount;
+
 /**
  * @brief Timer callback for testing the UART debugger
  * @details outputs "Hello World" to the debugger
@@ -45,7 +48,17 @@ static uint8_t debugHandle;
  */
 void vTimerCallback( TimerHandle_t pxTimer )
 {
-  debug_out(debugHandle,"Hello World\r\n",13);  //output Hello World a carriage return and a new line to the debugger
+  uint8_t remainder, digit;
+  
+  remainder = loopCount;
+  digit = remainder/10;
+  testOutput[14] = (digit>0)?(('0'+digit)):' ';
+  digit = remainder%10;
+  testOutput[15] = ('0'+digit);
+  uart_debugger_out(debugHandle,testOutput,19);  //output Hello World a carriage return and a new line to the debugger
+  
+  if(loopCount == 99) loopCount = 0;
+  else loopCount++;
 }
 
 /**
@@ -58,13 +71,34 @@ void app_main()
 {  
   TimerHandle_t debugTimerHandle; //handle for a debug timer
   
-  debug_init();  //initialize the debugger
-  debugHandle = debug_add_handle();
+  uart_debugger_init();  //initialize the debugger
+  debugHandle = uart_debugger_add_handle();
   
   debugTimerHandle = xTimerCreate("DebugTimer",1000,pdTRUE,NULL,vTimerCallback);
   
   
-  xTaskCreate(debug_task, "uart_debugger_task", 1024, NULL, 10, NULL); //use debug_task as the function with a name "uart_debugger_task", a stack size of 1024, no parameters, a priority of 10, and no handle
+  xTaskCreate(uart_debugger_task, "uart_debugger_task", 1024, NULL, 10, NULL); //use uart_debugger_task as the function with a name "uart_debugger_task", a stack size of 1024, no parameters, a priority of 10, and no handle
+  
+  testOutput[0] = 'L';
+  testOutput[1] = 'o';
+  testOutput[2] = 'o';
+  testOutput[3] = 'p';
+  testOutput[4] = ' ';
+  testOutput[5] = 'C';
+  testOutput[6] = 'o';
+  testOutput[7] = 'u';
+  testOutput[8] = 'n';
+  testOutput[9] = 't';
+  testOutput[10] = 'e';
+  testOutput[11] = 'r';
+  testOutput[12] = ':';
+  testOutput[13] = ' ';
+  testOutput[14] = '#';
+  testOutput[15] = '#';
+  testOutput[16] = '\r';
+  testOutput[17] = '\n';
+  testOutput[18] = '\0';
+  loopCount = 0;
   
   xTimerStart(debugTimerHandle,0);
 }

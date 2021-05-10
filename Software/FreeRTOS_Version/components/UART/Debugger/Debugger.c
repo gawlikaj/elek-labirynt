@@ -36,15 +36,15 @@
 #include "freertos/message_buffer.h"
 
 
-#define UART_DEBUG_TXD  (GPIO_NUM_1)
-#define UART_DEBUG_RXD  (GPIO_NUM_3)
-#define UART_DEBUG_RTS  (GPIO_NUM_2)
-#define UART_DEBUG_CTS  (GPIO_NUM_35)
+#define UART_DEBUGGER_TXD  (GPIO_NUM_1)
+#define UART_DEBUGGER_RXD  (GPIO_NUM_3)
+#define UART_DEBUGGER_RTS  (GPIO_NUM_2)
+#define UART_DEBUGGER_CTS  (GPIO_NUM_35)
 
 #define DEBUG_MAX_HANDLES 16  //no more than 16 debug handles allowed
 #define BUF_SIZE (128)
 
-#define UART_DEBUG_PORT UART_NUM_0  //UART0 being used for the debug port since it is connected directly to the USB port
+#define UART_DEBUGGER_PORT UART_NUM_0  //UART0 being used for the debug port since it is connected directly to the USB port
 
 uint8_t countDebugHandles;
 MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
@@ -53,7 +53,7 @@ MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 /*
     initialize the UART for the debugger
  */
-void debug_init()
+void uart_debugger_init()
 {
   /* Configure parameters of an UART driver,
      * communication pins and install the driver */
@@ -70,28 +70,28 @@ void debug_init()
     /*
        install the driver
        
-       using the defined UART_DEBUG_PORT to specify the UART to use
+       using the defined UART_DEBUGGER_PORT to specify the UART to use
        receive buffer size is BUF_SIZE*2
        transmit buffer size is 0  (not using transmit buffer)
        UART event queue size is 0
        not using Queue Handle for UART driver (does not handle UART events)
        intr_alloc_flags not set  //use esp_intr_alloc.h for possible flags, do not use ESP_INTR_FLAG_IRAM (as stated in Line 94 of uart.h)
      */       
-    uart_driver_install(UART_DEBUG_PORT, BUF_SIZE * 2, 0, 0, NULL, 0);
+    uart_driver_install(UART_DEBUGGER_PORT, BUF_SIZE * 2, 0, 0, NULL, 0);
     
     /*
-       configure UART parameters being set for the UART_DEBUG_PORT and check for errors using ESP_ERROR_CHECK
+       configure UART parameters being set for the UART_DEBUGGER_PORT and check for errors using ESP_ERROR_CHECK
      */
-    ESP_ERROR_CHECK(uart_param_config(UART_DEBUG_PORT, &uart_config));
+    ESP_ERROR_CHECK(uart_param_config(UART_DEBUGGER_PORT, &uart_config));
     
     /*
-       set the pins for the UART_DEBUG_PORT
+       set the pins for the UART_DEBUGGER_PORT
        Transmit Pin
        Receive Pin
        RTS pin
        CTS pin
      */
-    uart_set_pin(UART_DEBUG_PORT, UART_DEBUG_TXD, UART_DEBUG_RXD, UART_DEBUG_RTS, UART_DEBUG_CTS);
+    uart_set_pin(UART_DEBUGGER_PORT, UART_DEBUGGER_TXD, UART_DEBUGGER_RXD, UART_DEBUGGER_RTS, UART_DEBUGGER_CTS);
     
     countDebugHandles = 0;
 }
@@ -99,18 +99,20 @@ void debug_init()
 /*
   the task used for the debugger
  */
-void debug_task()
+void uart_debugger_task()
 {
   int debuggerHandleIndex;
   char buffer[BUF_SIZE];
-  const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );
+  static const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );
+  size_t receivedBytes;
   
   while(1)
   {
     for(debuggerHandleIndex = 0; debuggerHandleIndex < countDebugHandles; debuggerHandleIndex++)
    {
-     xMessageBufferReceive(arrDebugHandles[debuggerHandleIndex],buffer,BUF_SIZE,xBlockTime);
-     uart_write_bytes(UART_DEBUG_PORT,(const char*)buffer,BUF_SIZE);
+     receivedBytes = xMessageBufferReceive(arrDebugHandles[debuggerHandleIndex],buffer,BUF_SIZE,xBlockTime);
+     if(receivedBytes > 0)
+       uart_write_bytes(UART_DEBUGGER_PORT,(const char*)buffer,BUF_SIZE);
    }
   }
 }
@@ -118,7 +120,7 @@ void debug_task()
 /*
   generates a debug message handle
 */
-uint8_t debug_add_handle()
+uint8_t uart_debugger_add_handle()
 {
   MessageBufferHandle_t handle;
   uint8_t result;  //assigned index
@@ -149,7 +151,7 @@ uint8_t debug_add_handle()
 /*
     output a string via the UART debugger
  */
-void debug_out(uint8_t handleIndex, char* data, size_t len)
+void uart_debugger_out(uint8_t handleIndex, char* data, size_t len)
 {
   const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );    
   

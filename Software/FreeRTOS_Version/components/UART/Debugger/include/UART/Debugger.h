@@ -37,7 +37,7 @@
  * @return none
  *
  */
-void debug_init();
+void uart_debugger_init();
 
 /**
  * @brief runs the debugger task 
@@ -45,7 +45,7 @@ void debug_init();
  * @return none
  *
  */ 
-void debug_task();
+void uart_debugger_task();
 
 /**
  * @brief generates a new debug handle
@@ -53,7 +53,7 @@ void debug_task();
  * @return none
  *
  */
-uint8_t debug_add_handle();
+uint8_t uart_debugger_add_handle();
 
 /**
  * @brief Send message to the debugger
@@ -63,4 +63,4 @@ uint8_t debug_add_handle();
  * @param[in] number of characters in the character string to output from the microcontroller via the UART
  * @return none
  */
-void debug_out(uint8_t handleIndex, char* data, size_t len);
+void uart_debugger_out(uint8_t handleIndex, char* data, size_t len);
