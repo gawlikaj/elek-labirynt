@@ -49,6 +49,8 @@
 uint8_t countDebugHandles;
 MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 
+static char msgErrHandle[33] = "Handle ## exceeded buffer size\r\n";
+
 
 /*
     initialize the UART for the debugger
@@ -105,14 +107,30 @@ void uart_debugger_task()
   char buffer[BUF_SIZE];
   static const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );
   size_t receivedBytes;
+  uint8_t remainder, digit;
   
+ 
   while(1)
   {
     for(debuggerHandleIndex = 0; debuggerHandleIndex < countDebugHandles; debuggerHandleIndex++)
    {
      receivedBytes = xMessageBufferReceive(arrDebugHandles[debuggerHandleIndex],buffer,BUF_SIZE,xBlockTime);
      if(receivedBytes > 0)
-       uart_write_bytes(UART_DEBUGGER_PORT,(const char*)buffer,BUF_SIZE);
+     {
+       if(receivedBytes < BUF_SIZE)
+	  uart_write_bytes(UART_DEBUGGER_PORT,(const char*)buffer,receivedBytes);
+       else
+       {
+               
+          remainder = debuggerHandleIndex;
+          digit = remainder/10;
+          msgErrHandle[8] = (digit>0)?(('0'+digit)):' ';
+          digit = remainder%10;
+          msgErrHandle[9] = ('0'+digit);
+  
+          uart_write_bytes(UART_DEBUGGER_PORT,msgErrHandle,33);
+       }
+     }
    }
   }
 }
