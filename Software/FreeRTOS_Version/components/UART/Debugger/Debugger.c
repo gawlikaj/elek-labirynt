@@ -50,7 +50,7 @@
 uint8_t countDebugHandles;
 MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 
-static char msgErrHandle[] = "Handle ## could not write to buffer\r\n";
+static char msgTimHandle[] = "Handle ## timed out writing to buffer\r\n";
 static char msgLenHandle[] = "Handle ## message buffer too long\r\n";
 
 
@@ -176,8 +176,8 @@ void uart_debugger_out(uint8_t handleIndex, char* data, size_t len)
       
       if(sentByteCount == 0)
       {
-        helper_string_insert_uint32(msgErrHandle,33,7,handleIndex,2);
-        xMessageBufferSend(arrDebugHandles[handleIndex], (void*)msgErrHandle,38,xBlockTime);
+        helper_string_insert_uint32(msgTimHandle,39,7,handleIndex,2);
+        xMessageBufferSend(arrDebugHandles[handleIndex], (void*)msgTimHandle,39,xBlockTime);
       }
     }
   }
