@@ -25,7 +25,7 @@
  * @details This file contains the header information for the UART debugger driver
  *
  * @author Andrew Gawlik
- * @date May 3 2021
+ * @date May 11 2021
  *
  */
 #include <stdint.h>

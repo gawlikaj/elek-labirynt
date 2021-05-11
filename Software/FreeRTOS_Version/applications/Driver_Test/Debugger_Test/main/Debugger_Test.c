@@ -25,7 +25,7 @@
   * @details This file contains the source code for the UART debugger driver test application
   *
   * @author Andrew Gawlik
-  * @date May 3 2021
+  * @date May 11 2021
   *
   */
 
