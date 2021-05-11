@@ -50,7 +50,7 @@
 uint8_t countDebugHandles;
 MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 
-static char msgErrHandle[] = "Handle ## exceeded buffer size\r\n";
+static char msgErrHandle[] = "Handle ## could not write to buffer\r\n";
 
 
 /*
@@ -117,13 +117,7 @@ void uart_debugger_task()
      receivedBytes = xMessageBufferReceive(arrDebugHandles[debuggerHandleIndex],buffer,BUF_SIZE,xBlockTime);
      if(receivedBytes > 0)
      {
-       if(receivedBytes < BUF_SIZE)
-	  uart_write_bytes(UART_DEBUGGER_PORT,(const char*)buffer,receivedBytes);
-       else
-       {
-          helper_string_insert_uint32(msgErrHandle,33,8,debuggerHandleIndex,2);
-          uart_write_bytes(UART_DEBUGGER_PORT,msgErrHandle,33);
-       }
+       uart_write_bytes(UART_DEBUGGER_PORT,(const char*)buffer,receivedBytes);
      }
    }
   }
@@ -165,10 +159,16 @@ uint8_t uart_debugger_add_handle()
  */
 void uart_debugger_out(uint8_t handleIndex, char* data, size_t len)
 {
-  const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );    
+  const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );
+  size_t sentByteCount;    
   
   if(handleIndex < countDebugHandles)
   {
-    xMessageBufferSend(arrDebugHandles[handleIndex], (void *) data, len, xBlockTime); //write a string (data) of length len to the UART for debugging
+    sentByteCount = xMessageBufferSend(arrDebugHandles[handleIndex], (void *) data, len, xBlockTime); //write a string (data) of length len to the UART for debugging
+    if(sentByteCount == 0)
+    {
+      helper_string_insert_uint32(msgErrHandle,33,7,handleIndex,2);
+      xMessageBufferSend(arrDebugHandles[handleIndex], (void*)msgErrHandle,38,xBlockTime);
+    }
   }
 }

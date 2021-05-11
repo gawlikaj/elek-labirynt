@@ -35,7 +35,7 @@
 #include "Helper/StringHelper.h"
 #include "UART/Debugger.h"
 
-static uint8_t debugHandle;
+static uint8_t debugHandle, debugHandle2, debugHandle3;
 
 static char testOutput[] = "Loop Counter: ##\r\n";  //use # for placeholder to help identify max digits for number to output and position
 static uint8_t loopCount;
@@ -60,6 +60,8 @@ void vTimerCallback( TimerHandle_t pxTimer )
   testOutput[15] = ('0'+digit);
   */
   uart_debugger_out(debugHandle,testOutput,19);  //output the testOutput string
+  uart_debugger_out(debugHandle2,"This is a long string for testing to see if it will be too long.  It should fail if it is beyond 128 characters by displaying a message saying the message is too long",167);
+  uart_debugger_out(debugHandle3,"Hello World\r\n",14);
   
   if(loopCount == 99) loopCount = 0;  //reset the loop count when it reaches 99
   else loopCount++;                   //increment the loop count by 1
@@ -77,6 +79,8 @@ void app_main()
   
   uart_debugger_init();  //initialize the debugger
   debugHandle = uart_debugger_add_handle();
+  debugHandle2 = uart_debugger_add_handle();
+  debugHandle3 = uart_debugger_add_handle();
   
   debugTimerHandle = xTimerCreate("DebugTimer",pdMS_TO_TICKS( 500 ),pdTRUE,NULL,vTimerCallback);  //call every 500 milliseconds
   
