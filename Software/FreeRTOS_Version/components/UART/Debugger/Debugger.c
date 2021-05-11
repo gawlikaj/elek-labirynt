@@ -34,6 +34,7 @@
 #include "driver/gpio.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/message_buffer.h"
+#include "Helper/StringHelper.h"
 
 
 #define UART_DEBUGGER_TXD  (GPIO_NUM_1)
@@ -49,7 +50,7 @@
 uint8_t countDebugHandles;
 MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 
-static char msgErrHandle[33] = "Handle ## exceeded buffer size\r\n";
+static char msgErrHandle[] = "Handle ## exceeded buffer size\r\n";
 
 
 /*
@@ -107,7 +108,6 @@ void uart_debugger_task()
   char buffer[BUF_SIZE];
   static const TickType_t xBlockTime = pdMS_TO_TICKS( 20 );
   size_t receivedBytes;
-  uint8_t remainder, digit;
   
  
   while(1)
@@ -121,13 +121,7 @@ void uart_debugger_task()
 	  uart_write_bytes(UART_DEBUGGER_PORT,(const char*)buffer,receivedBytes);
        else
        {
-               
-          remainder = debuggerHandleIndex;
-          digit = remainder/10;
-          msgErrHandle[8] = (digit>0)?(('0'+digit)):' ';
-          digit = remainder%10;
-          msgErrHandle[9] = ('0'+digit);
-  
+          helper_string_insert_uint32(msgErrHandle,33,8,debuggerHandleIndex,2);
           uart_write_bytes(UART_DEBUGGER_PORT,msgErrHandle,33);
        }
      }

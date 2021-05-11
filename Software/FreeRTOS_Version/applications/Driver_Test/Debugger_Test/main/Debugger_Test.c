@@ -32,11 +32,12 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/timers.h"
+#include "Helper/StringHelper.h"
 #include "UART/Debugger.h"
 
 static uint8_t debugHandle;
 
-static char testOutput[19];
+static char testOutput[] = "Loop Counter: ##\r\n";  //use # for placeholder to help identify max digits for number to output and position
 static uint8_t loopCount;
 
 /**
@@ -48,17 +49,20 @@ static uint8_t loopCount;
  */
 void vTimerCallback( TimerHandle_t pxTimer )
 {
-  uint8_t remainder, digit;
+  //uint8_t remainder, digit;
   
-  remainder = loopCount;
+  //remainder = loopCount;
+  helper_string_insert_uint32(testOutput,19,14,loopCount,2); //insert the loop count into position 14 with a max digit count of 2; the string length of testOutput is 19
+  /*
   digit = remainder/10;
   testOutput[14] = (digit>0)?(('0'+digit)):' ';
   digit = remainder%10;
   testOutput[15] = ('0'+digit);
-  uart_debugger_out(debugHandle,testOutput,19);  //output Hello World a carriage return and a new line to the debugger
+  */
+  uart_debugger_out(debugHandle,testOutput,19);  //output the testOutput string
   
-  if(loopCount == 99) loopCount = 0;
-  else loopCount++;
+  if(loopCount == 99) loopCount = 0;  //reset the loop count when it reaches 99
+  else loopCount++;                   //increment the loop count by 1
 }
 
 /**
@@ -74,30 +78,11 @@ void app_main()
   uart_debugger_init();  //initialize the debugger
   debugHandle = uart_debugger_add_handle();
   
-  debugTimerHandle = xTimerCreate("DebugTimer",1000,pdTRUE,NULL,vTimerCallback);
+  debugTimerHandle = xTimerCreate("DebugTimer",pdMS_TO_TICKS( 500 ),pdTRUE,NULL,vTimerCallback);  //call every 500 milliseconds
   
   
   xTaskCreate(uart_debugger_task, "uart_debugger_task", 1024, NULL, 10, NULL); //use uart_debugger_task as the function with a name "uart_debugger_task", a stack size of 1024, no parameters, a priority of 10, and no handle
   
-  testOutput[0] = 'L';
-  testOutput[1] = 'o';
-  testOutput[2] = 'o';
-  testOutput[3] = 'p';
-  testOutput[4] = ' ';
-  testOutput[5] = 'C';
-  testOutput[6] = 'o';
-  testOutput[7] = 'u';
-  testOutput[8] = 'n';
-  testOutput[9] = 't';
-  testOutput[10] = 'e';
-  testOutput[11] = 'r';
-  testOutput[12] = ':';
-  testOutput[13] = ' ';
-  testOutput[14] = '#';
-  testOutput[15] = '#';
-  testOutput[16] = '\r';
-  testOutput[17] = '\n';
-  testOutput[18] = '\0';
   loopCount = 0;
   
   xTimerStart(debugTimerHandle,0);
