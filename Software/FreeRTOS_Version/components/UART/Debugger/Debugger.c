@@ -51,6 +51,7 @@ uint8_t countDebugHandles;
 MessageBufferHandle_t arrDebugHandles[DEBUG_MAX_HANDLES];
 
 static char msgErrHandle[] = "Handle ## could not write to buffer\r\n";
+static char msgLenHandle[] = "Handle ## message buffer too long\r\n";
 
 
 /*
@@ -164,11 +165,20 @@ void uart_debugger_out(uint8_t handleIndex, char* data, size_t len)
   
   if(handleIndex < countDebugHandles)
   {
-    sentByteCount = xMessageBufferSend(arrDebugHandles[handleIndex], (void *) data, len, xBlockTime); //write a string (data) of length len to the UART for debugging
-    if(sentByteCount == 0)
+    if(len > BUF_SIZE)
     {
-      helper_string_insert_uint32(msgErrHandle,33,7,handleIndex,2);
-      xMessageBufferSend(arrDebugHandles[handleIndex], (void*)msgErrHandle,38,xBlockTime);
+      helper_string_insert_uint32(msgLenHandle,36,7,handleIndex,2);
+      xMessageBufferSend(arrDebugHandles[handleIndex],(void*)msgLenHandle,36,xBlockTime);
+    }
+    else
+    {
+      sentByteCount = xMessageBufferSend(arrDebugHandles[handleIndex], (void *) data, len, xBlockTime); //write a string (data) of length len to the UART for debugging
+      
+      if(sentByteCount == 0)
+      {
+        helper_string_insert_uint32(msgErrHandle,33,7,handleIndex,2);
+        xMessageBufferSend(arrDebugHandles[handleIndex], (void*)msgErrHandle,38,xBlockTime);
+      }
     }
   }
 }
