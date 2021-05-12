@@ -1,0 +1,9 @@
+menu "Qwiic Joystick configuration"
+
+    config QWIIC_JOYSTICK_PERIPHERAL_ADDRESS
+        hex "Specify the address of the Qwiic Joystick Peripheral"
+        default 0x20
+        help
+            Pick the address of the Qwiic Joystick Peripheral
+
+endmenu  # Qwiic configurations
