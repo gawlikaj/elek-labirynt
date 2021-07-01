@@ -42,6 +42,6 @@ Unit tests can be created for each component by adding a "test" directory inside
   the source file includes all test cases one wishes to use (see unity for information on how to implement test cases)
   to run the tests, one needs to navigate to `esp/esp-idf/tools/unit-test-app/` and update the CMakeLists.txt to include the appropriate paths for the components to be tested.  After that one runs `idf.py -T xxx build` where xxx is the component to be tested followed by flashing and monitoring as appropriate.  For more interactive testing, a separate application is advisable.
 
-#additional information
+# additional information
 The ESP-IDF build system does not allow whitespace characters in paths so any directories here must be without whitespace characters
 
