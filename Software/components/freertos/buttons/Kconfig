@@ -1,0 +1,11 @@
+menu "Button configuration"
+
+    config BUTTONS_DEBOUNCE_MS
+    int "Specify the debounce time to use for the buttons in milliseconds"
+    range 0 1000
+    default 100
+    help
+       The debounce time used for handling button interrupts to prevent accidental triggers
+    
+
+endmenu  # Button configuration

@@ -4,7 +4,7 @@
 # CMakeLists in this exact order for cmake to work correctly
 cmake_minimum_required(VERSION 3.5)
 
-list(APPEND EXTRA_COMPONENT_DIRS "../../../components/Qwiic/QwiicController")
-list(APPEND EXTRA_COMPONENT_DIRS "../../../components/Qwiic/Joystick")
+list(APPEND CUSTOM_COMPONENTS "freertos/buttons")
+include("../../custom_components.cmake")
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(Joystick_Test)
+project(Buttons_FreeRTOS_Interactive)
