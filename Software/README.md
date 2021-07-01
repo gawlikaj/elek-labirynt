@@ -31,10 +31,10 @@ idf.py encrypted-app-flash (flash encrypted app only)
 note:  before the appropriate flash command, one can enter -p port where port is the port to use for monitoring
 idf.py monitor  (use ctrl ] to exit)
 
-##CMakeLists.txt
+## CMakeLists.txt
 in the application CMakeLists.txt for the source directory, it needs to include `list(APPEND CUSTOM_COMPONENTS "xxx/yyy")` where "xxx" is an indicator of "freertos" or "baremetal" and "yyy" is the component name.  Also after all custom components have been added, this line needs to be included prior to the inclusion of project.cmake `include("../../custom_components.cmake")` this will convert the custom components to the correct paths for use in the build process.
 
-##Unit Testing
+## Unit Testing
 Unit tests can be created for each component by adding a "test" directory inside including the following:
   `idf_component_register(SRC_DIRS .
                        PRIV_REQUIRES cmock test_utils xxx)`
