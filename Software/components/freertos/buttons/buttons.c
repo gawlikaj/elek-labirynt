@@ -38,7 +38,7 @@
 static const TickType_t ticksDeltaDebounce = pdMS_TO_TICKS(CONFIG_BUTTONS_DEBOUNCE_MS);                          //convert the debounce time configured in menuconfig to number of ticks
 
 #define BUTTONS_NUM  5                                                                                           //the number of buttons
-static const gpio_num_t buttonPin[BUTTONS_NUM] = {GPIO_NUM_32,GPIO_NUM_33,GPIO_NUM_12,GPIO_NUM_13,GPIO_NUM_36};  //array for each number
+static const gpio_num_t buttonPin[BUTTONS_NUM] = {GPIO_NUM_32,GPIO_NUM_4,GPIO_NUM_12,GPIO_NUM_13,GPIO_NUM_36};  //array for each number
 ButtonHandler handlers[BUTTONS_NUM];
 static const gpio_isr_t parentHandlers[BUTTONS_NUM] = {button0_handler,button1_handler,button2_handler,button3_handler,button4_handler};
 
