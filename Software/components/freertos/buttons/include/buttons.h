@@ -22,10 +22,10 @@
  * @file buttons.h
  * @brief Momentary Pushbuttons Interface (header)
  *
- * @details This file contains the header information for the Momentary Pushbuttons using Free RTOS on the ESP32
+ * @details This file contains the header information for the Momentary Pushbuttons using FreeRTOS on the ESP32
  *
  * @author Andrew Gawlik
- * @date Jul 1 2021
+ * @date Jul 7 2021
  *
  */
 
